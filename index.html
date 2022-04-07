@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -12,7 +11,7 @@
     <link rel="stylesheet" href="scss/main.min.css" />
     <!-- main css -->
     <!-- responsive -->
-    <link rel="stylesheet" href="scss/main-responsive.min.css">
+    <link rel="stylesheet" href="css/responsive.css">
     <!-- responsive -->
     <!-- swiper -->
     <link rel="stylesheet" href="css/swiper-demos.css">
@@ -566,7 +565,7 @@
                                             </div>
                                             <div class="third-col">
                                                 <div class="image">
-                                                    <img src="image/im1.png" alt="favourit">
+                                                    <img src="image/car1.png" alt="favourit">
                                                     <div class=" heart" title="quick shop">
                                                         <img onclick="activeHeart(6)" id="heart6" src="image/star.png"
                                                             alt=" star">
@@ -647,7 +646,7 @@
                                                     </div>
                                                     <div class="form-check">
                                                         <input class="form-check-input" type="checkbox" value=""
-                                                            id="flexCheckDefault1">
+                                                            id="flexCheckDefault1" checked>
                                                         <label class="form-check-label head-primary"
                                                             for="flexCheckDefault1">
                                                             سيارات ومركبات وملحقاتها
@@ -806,20 +805,18 @@
                                             <div class="accordion-body year-design">
                                                 <div class="content">
                                                     <div class="input-group">
-                                                            <select class="form-select"
-                                                                aria-label="Default select example">
-                                                                <option selected>من</option>
-                                                                <option value="1">One</option>
-                                                                <option value="2">Two</option>
-                                                                <option value="3">Three</option>
-                                                            </select>
-                                                            <select class="form-select"
-                                                                aria-label="Default select example">
-                                                                <option selected>الي</option>
-                                                                <option value="1">One</option>
-                                                                <option value="2">Two</option>
-                                                                <option value="3">Three</option>
-                                                            </select>
+                                                        <select class="form-select" aria-label="Default select example">
+                                                            <option selected>من</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                        <select class="form-select" aria-label="Default select example">
+                                                            <option selected>الي</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
                                                     </div>
 
                                                 </div>
@@ -829,8 +826,8 @@
 
                                 </div>
                                 <!-- finish industru year -->
-                                  <!-- start seller -->
-                                  <div class="accordion accordion-flush" id="accordionFlushExample5">
+                                <!-- start seller -->
+                                <div class="accordion accordion-flush" id="accordionFlushExample5">
                                     <div class="accordion-item">
                                         <h2 class="accordion-header" id="flush-headingOne">
                                             <button class="accordion-button collapsed" type="button"
@@ -872,6 +869,30 @@
                                     </div>
                                 </div>
                                 <!-- finish seller -->
+                                   <!-- start range price-->
+                                   <div class="accordion accordion-flush" id="accordionFlushExample2">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingOne">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                                aria-expanded="false" aria-controls="flush-collapseOne">
+                                                السعر                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseOne" class="accordion-collapse collapse show"
+                                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample2">
+                                            <div class="accordion-body year-design">
+                                                <div class="content">
+                                                    <div class="input-group">
+                                                    <input type="number"  placeholder="0 رس" class="form-control">
+                                                    <input type="number"  placeholder="100رس " class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- finish range price -->
                             </div>
                         </div>
                         <!-- finish col -->
@@ -884,13 +905,13 @@
                             <!-- start new && old product -->
                             <ul class="nav nav-pills nav-old-new" id="pills-tab" role="tablist">
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link active" id="pills-new-tab" data-bs-toggle="pill"
-                                        data-bs-target="#pills-new" type="button" role="tab" aria-controls="pills-new"
+                                    <button class="nav-link active" id="pills-new1-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-new1" type="button" role="tab" aria-controls="pills-new1"
                                         aria-selected="true"> <i class="bi bi-box"></i> سلعة جديدة</button>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <button class="nav-link" id="pills-old-tab" data-bs-toggle="pill"
-                                        data-bs-target="#pills-old" type="button" role="tab" aria-controls="pills-old"
+                                    <button class="nav-link" id="pills-old1-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-old1" type="button" role="tab" aria-controls="pills-old1"
                                         aria-selected="false"> <i class="bi bi-box"></i> سلعة مستعملة</button>
                                 </li>
 
@@ -1018,11 +1039,11 @@
                                 </div>
 
                             </div>
-
                             <!-- finish filter brand type -->
+                            <!-- start tab content -->
                             <div class="tab-content tab-product" id="pills-tabContent">
-                                <div class="tab-pane fade show active" id="pills-new" role="tabpanel"
-                                    aria-labelledby="pills-new-tab">
+                                <div class="tab-pane fade show active" id="pills-new1" role="tabpanel"
+                                    aria-labelledby="pills-new1-tab">
                                     <!-- content card -->
                                     <div class="content">
                                         <a href="product.html" class="box-content">
@@ -1039,7 +1060,7 @@
                                             </div>
                                             <div class="third-col">
                                                 <div class="image">
-                                                    <img src="image/im1.png" alt="favourit">
+                                                    <img src="image/car2.png" alt="favourit">
                                                     <div class=" heart" title="quick shop">
                                                         <img onclick="activeHeart(1)" id="heart1" src="image/star.png"
                                                             alt=" star">
@@ -1061,7 +1082,7 @@
                                             </div>
                                             <div class="third-col">
                                                 <div class="image">
-                                                    <img src="image/im1.png" alt="favourit">
+                                                    <img src="image/car2.png" alt="favourit">
                                                     <div class=" heart" title="quick shop">
                                                         <img onclick="activeHeart(2)" id="heart2" src="image/star.png"
                                                             alt=" star">
@@ -1083,7 +1104,7 @@
                                             </div>
                                             <div class="third-col">
                                                 <div class="image">
-                                                    <img src="image/im1.png" alt="favourit">
+                                                    <img src="image/car3.png" alt="favourit">
                                                     <div class=" heart" title="quick shop">
                                                         <img onclick="activeHeart(3)" id="heart3" src="image/star.png"
                                                             alt=" star">
@@ -1105,7 +1126,7 @@
                                             </div>
                                             <div class="third-col">
                                                 <div class="image">
-                                                    <img src="image/im1.png" alt="favourit">
+                                                    <img src="image/car4.png" alt="favourit">
                                                     <div class=" heart" title="quick shop">
                                                         <img onclick="activeHeart(5)" id="heart5" src="image/star.png"
                                                             alt=" star">
@@ -1127,7 +1148,7 @@
                                             </div>
                                             <div class="third-col">
                                                 <div class="image">
-                                                    <img src="image/im1.png" alt="favourit">
+                                                    <img src="image/car5.png" alt="favourit">
                                                     <div class=" heart" title="quick shop">
                                                         <img onclick="activeHeart(6)" id="heart6" src="image/star.png"
                                                             alt=" star">
@@ -1161,8 +1182,8 @@
                                     </nav>
                                     <!---------------------------- pagination ------------------------------->
                                 </div>
-                                <div class="tab-pane fade" id="pills-old" role="tabpanel"
-                                    aria-labelledby="pills-old-tab">
+                                <div class="tab-pane fade" id="pills-old1" role="tabpanel"
+                                    aria-labelledby="pills-old1-tab">
                                     <div class="content">
                                         <a href="product.html" class="box-content">
                                             <div class="first-col">
@@ -1178,7 +1199,7 @@
                                             </div>
                                             <div class="third-col">
                                                 <div class="image">
-                                                    <img src="image/im1.png" alt="favourit">
+                                                    <img src="image/car1.png" alt="favourit">
                                                     <div class=" heart" title="quick shop">
                                                         <img onclick="activeHeart(1)" id="heart1" src="image/star.png"
                                                             alt=" star">
@@ -1244,7 +1265,7 @@
                                             </div>
                                             <div class="third-col">
                                                 <div class="image">
-                                                    <img src="image/im1.png" alt="favourit">
+                                                    <img src="image/car2.png" alt="favourit">
                                                     <div class=" heart" title="quick shop">
                                                         <img onclick="activeHeart(5)" id="heart5" src="image/star.png"
                                                             alt=" star">
@@ -1262,11 +1283,11 @@
                                             </div>
                                             <div class="sec-col">
                                                 <p><i class="bi bi-clock"></i> قبل أسبوعين و 5 ايام</p>
-                                                <p><i class="bi bi-person"></i> معرض انوار النخبة</p>
+                                                <p><i class="bi bi-person"></i> معرض النخبة</p>
                                             </div>
                                             <div class="third-col">
                                                 <div class="image">
-                                                    <img src="image/im1.png" alt="favourit">
+                                                    <img src="image/car1.png" alt="favourit">
                                                     <div class=" heart" title="quick shop">
                                                         <img onclick="activeHeart(6)" id="heart6" src="image/star.png"
                                                             alt=" star">
@@ -1274,7 +1295,6 @@
                                                 </div>
                                             </div>
                                         </a>
-
                                         <!-- content card -->
                                         <!---------------------------- pagination ------------------------------->
                                         <nav class="my-4 py-4 " aria-label="Page navigation example">
@@ -1299,54 +1319,768 @@
                                             </ul>
                                         </nav>
                                         <!---------------------------- pagination ------------------------------->
-
                                     </div>
                                 </div>
                                 <!-- finish new && old product -->
                             </div>
-                            <!-- finish col -->
-
+                            <!-- finish tab content -->
                         </div>
-                        <!-- start row -->
+                        <!-- finish col -->
 
                     </div>
-
                 </div>
-                <!-- second content -->
-                <!-- third content -->
-                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">4
-                </div>
-                <!-- third content -->
-                <!-- fourth content -->
-                <div class="tab-pane fade" id="pills-first" role="tabpanel" aria-labelledby="pills-first-tab">5
-                </div>
-                <!-- fourth content -->
-                <!-- fifth content -->
-                <div class="tab-pane fade" id="pills-second" role="tabpanel" aria-labelledby="pills-second-tab">6
-                </div>
-                <!-- fifth content -->
-                <!-- sixth content -->
-                <div class="tab-pane fade" id="pills-third" role="tabpanel" aria-labelledby="pills-third-tab">7
-                </div>
-                <!-- sixth content -->
-                <!-- seven content -->
-                <div class="tab-pane fade" id="pills-fourth" role="tabpanel" aria-labelledby="pills-fourth-tab">8
-                </div>
-                <!-- seven content -->
-                <!-- eight content -->
-                <div class="tab-pane fade" id="pills-fifth" role="tabpanel" aria-labelledby="pills-fifth-tab">9
-                </div>
-                <!-- eight content -->
-                <!-- nine content -->
-                <div class="tab-pane fade" id="pills-sixth" role="tabpanel" aria-labelledby="pills-sixth-tab">9
-                </div>
-                <!-- nine content -->
-                <!-- ten content -->
-                <div class="tab-pane fade" id="pills-seventh" role="tabpanel" aria-labelledby="pills-seventh-tab">10
-                </div>
-                <!-- ten content -->
-
             </div>
+            <!-- second content -->
+            <!-- third content -->
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                <div class="container">
+                    <div class="row">
+                        <!-- start col -->
+                        <div class="col-lg-3">
+                            <div class="filter-search">
+                                <div class="header">
+                                    <h6 class="head-primary">فلتر البحث</h6>
+                                    <h5 class="head-primary">مسح الكل</h5>
+                                </div>
+                                <!-- start categories -->
+                                <div class="accordion accordion-flush" id="accordionFlushExample6">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingOne">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                                aria-expanded="false" aria-controls="flush-collapseOne">
+                                                التصنيفات
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseOne" class="accordion-collapse collapse show"
+                                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample6">
+                                            <div class="accordion-body">
+                                                <div class="content">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault">
+                                                        <label class="form-check-label head-primary"
+                                                            for="flexCheckDefault">
+                                                            الكل
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault1" checked>
+                                                        <label class="form-check-label head-primary"
+                                                            for="flexCheckDefault1">
+                                                            سيارات ومركبات وملحقاتها
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault2">
+                                                        <label class="form-check-label head-primary"
+                                                            for="flexCheckDefault2">
+                                                            ملابس وأزياء
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault3">
+                                                        <label class="form-check-label head-primary"
+                                                            for="flexCheckDefault3">
+                                                            عقارات و أملاك
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault4">
+                                                        <label class="form-check-label head-primary"
+                                                            for="flexCheckDefault4">
+                                                            أجهزة الكترونية وكهربية
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault5">
+                                                        <label class="form-check-label head-primary"
+                                                            for="flexCheckDefault5">
+                                                            أثاث منزلي
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault6">
+                                                        <label class="form-check-label head-primary"
+                                                            for="flexCheckDefault6">
+                                                            حيوانات وطيور
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault7">
+                                                        <label class="form-check-label head-primary"
+                                                            for="flexCheckDefault7">
+                                                            أٌسر منتجة
+                                                        </label>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <!-- finish categories -->
+                                <!-- start type -->
+                                <div class="accordion accordion-flush" id="accordionFlushExample7">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingOne">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                                aria-expanded="false" aria-controls="flush-collapseOne">
+                                                النوع
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseOne" class="accordion-collapse collapse show"
+                                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample7">
+                                            <div class="accordion-body">
+                                                <div class="content">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault">
+                                                        <label class="form-check-label head-primary"
+                                                            for="flexCheckDefault">
+                                                            الكل
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault1">
+                                                        <label class="form-check-label head-primary"
+                                                            for="flexCheckDefault1">
+                                                            تويوتا </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault2">
+                                                        <label class="form-check-label head-primary"
+                                                            for="flexCheckDefault2">
+                                                            قطع غيار
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault3">
+                                                        <label class="form-check-label head-primary"
+                                                            for="flexCheckDefault3">
+                                                            فورتشينر </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault4">
+                                                        <label class="form-check-label head-primary"
+                                                            for="flexCheckDefault4">
+                                                            كورولا </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault5">
+                                                        <label class="form-check-label head-primary"
+                                                            for="flexCheckDefault5">
+                                                            لاند كروزر </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault6">
+                                                        <label class="form-check-label head-primary"
+                                                            for="flexCheckDefault6">
+                                                            افالون </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault7">
+                                                        <label class="form-check-label head-primary"
+                                                            for="flexCheckDefault7">
+                                                            يارس </label>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <!-- finish type -->
+                                <!-- start industru year -->
+                                <div class="accordion accordion-flush" id="accordionFlushExample8">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingOne">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                                aria-expanded="false" aria-controls="flush-collapseOne">
+                                                سنة الصنع
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseOne" class="accordion-collapse collapse show"
+                                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample8">
+                                            <div class="accordion-body year-design">
+                                                <div class="content">
+                                                    <div class="input-group">
+                                                        <select class="form-select" aria-label="Default select example">
+                                                            <option selected>من</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                        <select class="form-select" aria-label="Default select example">
+                                                            <option selected>الي</option>
+                                                            <option value="1">One</option>
+                                                            <option value="2">Two</option>
+                                                            <option value="3">Three</option>
+                                                        </select>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- finish industru year -->
+                                <!-- start seller -->
+                                <div class="accordion accordion-flush" id="accordionFlushExample9">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingOne">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                                aria-expanded="false" aria-controls="flush-collapseOne">
+                                                البائع
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseOne" class="accordion-collapse collapse show"
+                                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample9">
+                                            <div class="accordion-body">
+                                                <div class="content">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault">
+                                                        <label class="form-check-label head-primary"
+                                                            for="flexCheckDefault">
+                                                            الكل
+                                                        </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault1">
+                                                        <label class="form-check-label head-primary"
+                                                            for="flexCheckDefault1">
+                                                            معرض </label>
+                                                    </div>
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" value=""
+                                                            id="flexCheckDefault2">
+                                                        <label class="form-check-label head-primary"
+                                                            for="flexCheckDefault2">
+                                                            غير معرض
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- finish seller -->
+                                   <!-- start range price-->
+                                   <div class="accordion accordion-flush" id="accordionFlushExample10">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingOne">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                                aria-expanded="false" aria-controls="flush-collapseOne">
+                                                السعر                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseOne" class="accordion-collapse collapse show"
+                                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample10">
+                                            <div class="accordion-body year-design">
+                                                <div class="content">
+                                                    <div class="input-group">
+                                                    <input type="number"  placeholder="0 رس" class="form-control">
+                                                    <input type="number"  placeholder="100رس " class="form-control">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- finish range price -->
+                            </div>
+                        </div>
+                        <!-- finish col -->
+                        <!-- start col -->
+                        <div class="col-lg-9">
+                            <div class="search-box">
+                                <input type="text" placeholder="ابحث عن سلعة جديدة أو مستعملة" class="form-control">
+                                <button type="button" class="first trans">ابحث الآن</button>
+                            </div>
+                            <!-- start new && old product -->
+                            <ul class="nav nav-pills nav-old-new" id="pills-tab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="pills-new2-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-new2" type="button" role="tab" aria-controls="pills-new2"
+                                        aria-selected="true"> <i class="bi bi-box"></i> سلعة جديدة</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="pills-old2-tab" data-bs-toggle="pill"
+                                        data-bs-target="#pills-old2" type="button" role="tab" aria-controls="pills-old2"
+                                        aria-selected="false"> <i class="bi bi-box"></i> سلعة مستعملة</button>
+                                </li>
+
+                            </ul>
+                            <div class="filter-tabel">
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>كل المناطق</option>
+                                    <option value="1">المنطقة الشمالية</option>
+                                    <option value="2">المنطقة الجنوبية</option>
+                                </select>
+                                <input type="checkbox" class="btn-check" id="btn-check-outlined" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="btn-check-outlined">الأقرب اليك
+                                </label>
+
+                                <input type="checkbox" class="btn-check" id="btn-check-outlined1" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="btn-check-outlined1">الأقل سعرا
+                                </label>
+
+                                <input type="checkbox" class="btn-check" id="btn-check-outlined2" autocomplete="off">
+                                <label class="btn btn-outline-primary" for="btn-check-outlined2">المضاف حديثا
+                                </label>
+                            </div>
+                            <!-- start filter brand -->
+                            <!-- <div class="filter-brand">
+                                <div class="swiper mySwiper">
+                                    <div class="swiper-wrapper">
+                                        <div class="swiper-slide">
+                                            <div class="img">
+                                                <img src="image/br1.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="img">
+                                                <img src="image/br2.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="img">
+                                                <img src="image/br3.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="img">
+                                                <img src="image/br4.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="img">
+                                                <img src="image/br5.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="img">
+                                                <img src="image/br6.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="img">
+                                                <img src="image/br7.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="img">
+                                                <img src="image/br8.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="img">
+                                                <img src="image/br9.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="img">
+                                                <img src="image/br10.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="img">
+                                                <img src="image/br11.png" alt="">
+                                            </div>
+                                        </div>
+                                        <div class="swiper-slide">
+                                            <div class="img">
+                                                <img src="image/br12.png" alt="">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                    <div class="swiper-button-next"> <i class="bi bi-chevron-left"></i></div>
+                                    <div class="swiper-button-prev"><i class="bi bi-chevron-right"></i></div>
+                                </div>
+                            </div> -->
+                            <!-- finish filter brand -->
+                            <!-- start filter brand type -->
+                            <div class="filter-brand-type">
+                                <div>
+                                    <input type="checkbox" class="btn-check" id="btn-check-outlined4"
+                                        autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="btn-check-outlined4"> ملابس اطفال
+                                    </label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="btn-check" id="btn-check-outlined5"
+                                        autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="btn-check-outlined5"> ملابس نساء
+                                    </label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="btn-check" id="btn-check-outlined6"
+                                        autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="btn-check-outlined6"> ملابس رجال
+                                    </label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="btn-check" id="btn-check-outlined7"
+                                        autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="btn-check-outlined7"> اكسسورارت
+                                    </label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" class="btn-check" id="btn-check-outlined8"
+                                        autocomplete="off">
+                                    <label class="btn btn-outline-primary" for="btn-check-outlined8"> حقائب
+                                    </label>
+                                </div>
+
+                            </div>
+                            <!-- finish filter brand type -->
+                            <!-- start tab content -->
+                            <div class="tab-content tab-product" id="pills-tabContent">
+                                <div class="tab-pane fade show active" id="pills-new2" role="tabpanel"
+                                    aria-labelledby="pills-new2-tab">
+                                    <!-- content card -->
+                                    <div class="content">
+                                        <a href="product.html" class="box-content">
+                                            <div class="first-col">
+                                                <div class="info">
+                                                    <h4>طاولة طعام و 6 كراسي مستطيلة</h4>
+                                                    <span>اثاث منزلي ,خزائن ودواليب </span>
+                                                    <p><i class="bi bi-geo-alt"></i> الطائف</p>
+                                                </div>
+                                            </div>
+                                            <div class="sec-col">
+                                                <p><i class="bi bi-clock"></i> قبل أسبوعين و 5 ايام</p>
+                                                <p><i class="bi bi-person"></i> معرض انوار النخبة</p>
+                                            </div>
+                                            <div class="third-col">
+                                                <div class="image">
+                                                    <img src="image/car2.png" alt="favourit">
+                                                    <div class=" heart" title="quick shop">
+                                                        <img onclick="activeHeart(1)" id="heart1" src="image/star.png"
+                                                            alt=" star">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="product.html" class="box-content">
+                                            <div class="first-col">
+                                                <div class="info">
+                                                    <h4>طاولة طعام و 6 كراسي مستطيلة</h4>
+                                                    <span>اثاث منزلي ,خزائن ودواليب </span>
+                                                    <p><i class="bi bi-geo-alt"></i> الطائف</p>
+                                                </div>
+                                            </div>
+                                            <div class="sec-col">
+                                                <p><i class="bi bi-clock"></i> قبل أسبوعين و 5 ايام</p>
+                                                <p><i class="bi bi-person"></i> معرض انوار النخبة</p>
+                                            </div>
+                                            <div class="third-col">
+                                                <div class="image">
+                                                    <img src="image/car2.png" alt="favourit">
+                                                    <div class=" heart" title="quick shop">
+                                                        <img onclick="activeHeart(2)" id="heart2" src="image/star.png"
+                                                            alt=" star">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="product.html" class="box-content">
+                                            <div class="first-col">
+                                                <div class="info">
+                                                    <h4>طاولة طعام و 6 كراسي مستطيلة</h4>
+                                                    <span>اثاث منزلي ,خزائن ودواليب </span>
+                                                    <p><i class="bi bi-geo-alt"></i> الطائف</p>
+                                                </div>
+                                            </div>
+                                            <div class="sec-col">
+                                                <p><i class="bi bi-clock"></i> قبل أسبوعين و 5 ايام</p>
+                                                <p><i class="bi bi-person"></i> معرض انوار النخبة</p>
+                                            </div>
+                                            <div class="third-col">
+                                                <div class="image">
+                                                    <img src="image/car3.png" alt="favourit">
+                                                    <div class=" heart" title="quick shop">
+                                                        <img onclick="activeHeart(3)" id="heart3" src="image/star.png"
+                                                            alt=" star">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="product.html" class="box-content">
+                                            <div class="first-col">
+                                                <div class="info">
+                                                    <h4>طاولة طعام و 6 كراسي مستطيلة</h4>
+                                                    <span>اثاث منزلي ,خزائن ودواليب </span>
+                                                    <p><i class="bi bi-geo-alt"></i> الطائف</p>
+                                                </div>
+                                            </div>
+                                            <div class="sec-col">
+                                                <p><i class="bi bi-clock"></i> قبل أسبوعين و 5 ايام</p>
+                                                <p><i class="bi bi-person"></i> معرض انوار النخبة</p>
+                                            </div>
+                                            <div class="third-col">
+                                                <div class="image">
+                                                    <img src="image/car4.png" alt="favourit">
+                                                    <div class=" heart" title="quick shop">
+                                                        <img onclick="activeHeart(5)" id="heart5" src="image/star.png"
+                                                            alt=" star">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="product.html" class="box-content">
+                                            <div class="first-col">
+                                                <div class="info">
+                                                    <h4>طاولة طعام و 6 كراسي مستطيلة</h4>
+                                                    <span>اثاث منزلي ,خزائن ودواليب </span>
+                                                    <p><i class="bi bi-geo-alt"></i> الطائف</p>
+                                                </div>
+                                            </div>
+                                            <div class="sec-col">
+                                                <p><i class="bi bi-clock"></i> قبل أسبوعين و 5 ايام</p>
+                                                <p><i class="bi bi-person"></i> معرض انوار النخبة</p>
+                                            </div>
+                                            <div class="third-col">
+                                                <div class="image">
+                                                    <img src="image/car5.png" alt="favourit">
+                                                    <div class=" heart" title="quick shop">
+                                                        <img onclick="activeHeart(6)" id="heart6" src="image/star.png"
+                                                            alt=" star">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <!-- content card -->
+                                    <!---------------------------- pagination ------------------------------->
+                                    <nav class="my-4 py-4 " aria-label="Page navigation example">
+                                        <ul class="pagination justify-content-center">
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Previous">
+                                                    <span aria-hidden="true">&laquo;</span>
+                                                </a>
+                                            </li>
+                                            <li class="page-item active" aria-current="page"><a class="page-link "
+                                                    href="#">1</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                            <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                            <li class="page-item">
+                                                <a class="page-link" href="#" aria-label="Next">
+                                                    <span aria-hidden="true">&raquo;</span>
+                                                </a>
+                                            </li>
+                                            <li><a class="btn first" href="#">الصفحة التالية</a></li>
+                                        </ul>
+                                    </nav>
+                                    <!---------------------------- pagination ------------------------------->
+                                </div>
+                                <div class="tab-pane fade" id="pills-old2" role="tabpanel"
+                                    aria-labelledby="pills-old2-tab">
+                                    <div class="content">
+                                        <a href="product.html" class="box-content">
+                                            <div class="first-col">
+                                                <div class="info">
+                                                    <h4>طاولة طعام و 6 كراسي مستطيلة</h4>
+                                                    <span>اثاث منزلي ,خزائن ودواليب </span>
+                                                    <p><i class="bi bi-geo-alt"></i> الطائف</p>
+                                                </div>
+                                            </div>
+                                            <div class="sec-col">
+                                                <p><i class="bi bi-clock"></i> قبل أسبوعين و 5 ايام</p>
+                                                <p><i class="bi bi-person"></i> معرض انوار النخبة</p>
+                                            </div>
+                                            <div class="third-col">
+                                                <div class="image">
+                                                    <img src="image/car1.png" alt="favourit">
+                                                    <div class=" heart" title="quick shop">
+                                                        <img onclick="activeHeart(1)" id="heart1" src="image/star.png"
+                                                            alt=" star">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="product.html" class="box-content">
+                                            <div class="first-col">
+                                                <div class="info">
+                                                    <h4>طاولة طعام و 6 كراسي مستطيلة</h4>
+                                                    <span>اثاث منزلي ,خزائن ودواليب </span>
+                                                    <p><i class="bi bi-geo-alt"></i> الطائف</p>
+                                                </div>
+                                            </div>
+                                            <div class="sec-col">
+                                                <p><i class="bi bi-clock"></i> قبل أسبوعين و 5 ايام</p>
+                                                <p><i class="bi bi-person"></i> معرض انوار النخبة</p>
+                                            </div>
+                                            <div class="third-col">
+                                                <div class="image">
+                                                    <img src="image/im1.png" alt="favourit">
+                                                    <div class=" heart" title="quick shop">
+                                                        <img onclick="activeHeart(2)" id="heart2" src="image/star.png"
+                                                            alt=" star">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="product.html" class="box-content">
+                                            <div class="first-col">
+                                                <div class="info">
+                                                    <h4>طاولة طعام و 6 كراسي مستطيلة</h4>
+                                                    <span>اثاث منزلي ,خزائن ودواليب </span>
+                                                    <p><i class="bi bi-geo-alt"></i> الطائف</p>
+                                                </div>
+                                            </div>
+                                            <div class="sec-col">
+                                                <p><i class="bi bi-clock"></i> قبل أسبوعين و 5 ايام</p>
+                                                <p><i class="bi bi-person"></i> معرض انوار النخبة</p>
+                                            </div>
+                                            <div class="third-col">
+                                                <div class="image">
+                                                    <img src="image/im1.png" alt="favourit">
+                                                    <div class=" heart" title="quick shop">
+                                                        <img onclick="activeHeart(3)" id="heart3" src="image/star.png"
+                                                            alt=" star">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="product.html" class="box-content">
+                                            <div class="first-col">
+                                                <div class="info">
+                                                    <h4>طاولة طعام و 6 كراسي مستطيلة</h4>
+                                                    <span>اثاث منزلي ,خزائن ودواليب </span>
+                                                    <p><i class="bi bi-geo-alt"></i> الطائف</p>
+                                                </div>
+                                            </div>
+                                            <div class="sec-col">
+                                                <p><i class="bi bi-clock"></i> قبل أسبوعين و 5 ايام</p>
+                                                <p><i class="bi bi-person"></i> معرض انوار النخبة</p>
+                                            </div>
+                                            <div class="third-col">
+                                                <div class="image">
+                                                    <img src="image/car2.png" alt="favourit">
+                                                    <div class=" heart" title="quick shop">
+                                                        <img onclick="activeHeart(5)" id="heart5" src="image/star.png"
+                                                            alt=" star">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <a href="product.html" class="box-content">
+                                            <div class="first-col">
+                                                <div class="info">
+                                                    <h4>طاولة طعام و 6 كراسي مستطيلة</h4>
+                                                    <span>اثاث منزلي ,خزائن ودواليب </span>
+                                                    <p><i class="bi bi-geo-alt"></i> الطائف</p>
+                                                </div>
+                                            </div>
+                                            <div class="sec-col">
+                                                <p><i class="bi bi-clock"></i> قبل أسبوعين و 5 ايام</p>
+                                                <p><i class="bi bi-person"></i> معرض النخبة</p>
+                                            </div>
+                                            <div class="third-col">
+                                                <div class="image">
+                                                    <img src="image/car1.png" alt="favourit">
+                                                    <div class=" heart" title="quick shop">
+                                                        <img onclick="activeHeart(6)" id="heart6" src="image/star.png"
+                                                            alt=" star">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </a>
+                                        <!-- content card -->
+                                        <!---------------------------- pagination ------------------------------->
+                                        <nav class="my-4 py-4 " aria-label="Page navigation example">
+                                            <ul class="pagination justify-content-center">
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Previous">
+                                                        <span aria-hidden="true">&laquo;</span>
+                                                    </a>
+                                                </li>
+                                                <li class="page-item active" aria-current="page"><a class="page-link "
+                                                        href="#">1</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">4</a></li>
+                                                <li class="page-item"><a class="page-link" href="#">5</a></li>
+                                                <li class="page-item">
+                                                    <a class="page-link" href="#" aria-label="Next">
+                                                        <span aria-hidden="true">&raquo;</span>
+                                                    </a>
+                                                </li>
+                                                <li><a class="btn first" href="#">الصفحة التالية</a></li>
+                                            </ul>
+                                        </nav>
+                                        <!---------------------------- pagination ------------------------------->
+                                    </div>
+                                </div>
+                                <!-- finish new && old product -->
+                            </div>
+                            <!-- finish tab content -->
+                        </div>
+                        <!-- finish col -->
+
+                    </div>
+                </div>
+            </div>
+            <!-- third content -->
+            <!-- fourth content -->
+            <div class="tab-pane fade" id="pills-first" role="tabpanel" aria-labelledby="pills-first-tab">5
+            </div>
+            <!-- fourth content -->
+            <!-- fifth content -->
+            <div class="tab-pane fade" id="pills-second" role="tabpanel" aria-labelledby="pills-second-tab">6
+            </div>
+            <!-- fifth content -->
+            <!-- sixth content -->
+            <div class="tab-pane fade" id="pills-third" role="tabpanel" aria-labelledby="pills-third-tab">7
+            </div>
+            <!-- sixth content -->
+            <!-- seven content -->
+            <div class="tab-pane fade" id="pills-fourth" role="tabpanel" aria-labelledby="pills-fourth-tab">8
+            </div>
+            <!-- seven content -->
+            <!-- eight content -->
+            <div class="tab-pane fade" id="pills-fifth" role="tabpanel" aria-labelledby="pills-fifth-tab">9
+            </div>
+            <!-- eight content -->
+            <!-- nine content -->
+            <div class="tab-pane fade" id="pills-sixth" role="tabpanel" aria-labelledby="pills-sixth-tab">9
+            </div>
+            <!-- nine content -->
+            <!-- ten content -->
+            <div class="tab-pane fade" id="pills-seventh" role="tabpanel" aria-labelledby="pills-seventh-tab">10
+            </div>
+            <!-- ten content -->
+
+        </div>
 
     </main>
     <!---------------------- finish  main index -------------------------------------------->
@@ -1437,18 +2171,10 @@
     <script src="js/jquery-3.5.1.min.js"></script>
     <script src="js/main.js"></script>
     <!-- main js -->
-    <!-- tostfy -->
-    <script src="js/tostify.js"></script>
-    <!-- tostfy -->
     <!-- swiper -->
     <script src="js/swiper-demos.js"></script>
-    <!-- swiper -->
-    <!-- animation -->
-    <script src="js/aos-anmite.js"></script>
-    <script>
-        AOS.init({ disable: 'mobile' });
-    </script>
-    <!-- animation -->
+    <!-- swiper --> 
+  
     <!-- active heart-->
     <script>
         function activeHeart(id) {

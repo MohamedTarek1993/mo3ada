@@ -376,7 +376,7 @@ input::-webkit-inner-spin-button {
           &::after {
             margin-left: 1px;
             margin-right: auto;
-            width: .8rem;
+            width: 0.8rem;
             height: 1rem;
             background-size: 0.8rem;
           }
@@ -648,6 +648,107 @@ input::-webkit-inner-spin-button {
     }
     /* finish pagination */
   }
+  // start product page
+  .layout {
+    padding: 40px 0;
+    .head{
+      font-size: .8rem;
+      font-family: 'light';
+      color: #141414;
+    }
+    .content{
+      h2{
+        font-size: 2.4rem;
+        font-family: 'bold';
+        color: var(--color-six);
+      }
+      .notes{
+        display: inline-block;
+        color: var(--color-primary);
+        font-size: .8rem;
+        font-family: 'regular';
+        width: 100%;
+        p{
+          display: inline-block;
+          margin-left: 5%;
+        }
+      }
+      .rates{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: row;
+        padding: 2% 0;
+        .bi-star-fill{
+          color: #F69504;
+        }
+        .bi-star-fill.r{
+          color: #7A797A;
+        }
+        i{
+          margin-left: 1%;
+        }
+
+        span{
+          font-size: .7rem;
+          color: var(--color-primary);
+          font-family: 'regular';
+        }
+      }
+      .main-image{
+        width: 736px;
+        height: 500px;
+      }
+      .detials-button{
+        display: flex;
+        justify-content: start;
+        align-items: flex-start;
+        flex-direction: row;
+        flex: 1;
+        .btn{
+          border-radius: 0px;
+          i{
+            margin-left: 2%;
+          }
+        }
+      }
+      .detials-text{
+        padding: 30px 0 10px;
+        h6{
+         font-size: 1rem;
+         color: var(--color-primary);
+         font-family: 'bold'; 
+         padding-bottom: 4%;
+        }
+        p{
+          font-size: .9rem;
+          color: var(--color-primary);
+          font-family: 'regular'; 
+        }
+      }
+      .detials-info{
+        ul{
+          display: flex;
+          justify-content: start;
+          flex-direction: row;
+          align-items: center;
+          flex-wrap: wrap;
+          li{
+            border: 1px solid #A9A9A9;
+            width: 45%;
+            padding: 2%;
+            font-family: 'light';
+            font-size: .8rem;
+            color: #5C5A61;
+            sapn{
+              
+            }
+          }
+        }
+      }
+    }
+  }
+  // finish product page
 }
 // finish main index
 //  start footer
