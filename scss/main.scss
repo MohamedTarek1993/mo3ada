@@ -55,21 +55,30 @@ ul {
 p {
   margin-bottom: 0;
 }
-
-.form-control {
+.form-label {
+  display: block;
+  font-size: 1rem;
+  color: var(--color-primary);
+  font-family: "regular";
+  width: 100%;
+}
+.form-control,
+.selectpicker {
   border-radius: 8px !important;
   padding-right: 2%;
   background-color: var(--background);
   font-family: "regular";
+  width: 92%;
 }
 .form-select {
   border-radius: 8px;
-  padding: 0.375rem 1.4rem;
+  padding: 0.54rem 1.4rem;
   font-family: "regular";
   font-size: 0.8rem;
   background-color: var(--background);
   color: var(--color-primary);
   background-position: left;
+  width: 92%;
   position: relative;
 }
 .form-control:focus {
@@ -1084,23 +1093,230 @@ input::-webkit-inner-spin-button {
       border: 1px solid var(--color-primary);
     }
     // start commission
-     .commision{
-       .head{
-         h2{
-           font-size: 2.2rem;
-           color: var(--color-primary);
-           font-family: 'bold';
-         }
-         sapn{
-           font-size: 1.4rem;
-           color: var(--color-se);
-         }
-       }
-     }
+    .commision {
+      .head {
+        h2 {
+          font-size: 2.2rem;
+          color: var(--color-primary);
+          font-family: "bold";
+        }
+        sapn {
+          font-size: 1.4rem;
+          color: var(--color-secound);
+          font-family: "light";
+        }
+      }
+      .quraan {
+        padding: 2% 1%;
+        margin: 1% 0;
+        border: 1px solid var(--color-secound);
+
+        span {
+          font-size: 1rem;
+          color: var(--color-secound);
+          font-family: "light";
+        }
+        h5 {
+          font-size: 1.2rem;
+          color: var(--color-primary);
+          font-family: "bold";
+          padding-top: 2%;
+        }
+      }
+      .swer {
+        padding-top: 2%;
+        .form-check {
+          margin-bottom: 1%;
+          .form-check-input {
+            float: right;
+            margin-right: 0.5em;
+            margin-left: 0;
+            &:checked {
+              background-color: var(--color-six);
+              border-color: var(--color-six);
+            }
+          }
+          .form-check-label {
+            font-size: 1.2rem;
+            color: var(--color-primary);
+            font-family: "regular";
+            padding-right: 1%;
+          }
+        }
+        span {
+          color: #d56464;
+          font-size: 0.8rem;
+          font-family: "light";
+        }
+      }
+      .notice {
+        display: flex;
+        padding: 1% 12px;
+        background-color: #f7f7f7;
+        color: var(--color-six);
+        margin-top: 2%;
+        p {
+          font-size: 1rem;
+          font-family: "regular";
+        }
+      }
+    }
     // end commission
+    .button {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-top: 3%;
+      padding-bottom: 4%;
+      .btn {
+        padding: 1% 10px;
+        width: 19%;
+      }
+    }
+    .adver-detials,
+    .location-detials,
+    .user-detials {
+      margin-bottom: 2%;
+      position: relative;
+      border-bottom: 1px solid var(--color-fourth);
+      padding-bottom: 5%;
+      h2 {
+        font-size: 1.9rem;
+        color: var(--color-primary);
+        font-family: "bold";
+        padding-bottom: 2%;
+      }
+      .input-group {
+        margin-bottom: 2%;
+        textarea {
+          height: 109px;
+          background-color: #f7f7f7;
+        }
+      }
+      .upl {
+        position: relative;
+        .profile-pic-div {
+          height: 100px;
+          width: 100px;
+          position: absolute;
+          top: 7%;
+          left: -24%;
+          transform: translate(0, 6%);
+          border-radius: 50%;
+          overflow: hidden;
+          border: 1px solid grey;
+        }
+
+        #photo {
+          height: 100%;
+          width: 100%;
+        }
+
+        #file {
+          display: none;
+        }
+
+        #uploadBtn {
+          height: 40px;
+          width: 100%;
+          position: absolute;
+          bottom: -220px;
+          font-family: "regular";
+          left: 40%;
+          transform: translateX(-50%);
+          text-align: center;
+          background: transparent;
+          color: var(--color-fourth);
+          font-size: 14px;
+          border: 1px solid var(--color-fourth);
+
+          /* line-height: 30px; */
+          cursor: pointer;
+          border-radius: 5px;
+          transition: 0.25s all ease;
+
+          /* display: none; */
+
+          &:hover {
+            opacity: 0.5;
+          }
+
+          h6 {
+            font-size: 13px;
+            margin: auto;
+            padding-top: 11%;
+          }
+        }
+      }
+      .upload-sec {
+        background-color: #f7f7f7;
+        padding: 2%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        width: 18%;
+        margin: 1%;
+        h6 {
+          color: var(--color-six);
+          font-size: 0.8rem;
+          font-family: "bold";
+        }
+        p {
+          color: var(--color-secound);
+          font-size: 0.6rem;
+          font-family: "light";
+        }
+      }
+      /* upload */
+
+      .form-check-input {
+        float: right;
+        margin-right: 0.5em;
+        margin-left: 0;
+        &:checked {
+          background-color: var(--color-six);
+          border-color: var(--color-six);
+        }
+      }
+      .form-check-label {
+        font-size: 0.9rem;
+        color: var(--color-primary);
+        font-family: "regular";
+        padding-right: 1%;
+      }
+    }
   }
 }
 // finish new advertsment
+// start modal adver
+.modal-advertis {
+  .modal-body {
+    .content {
+      padding: 4% 1%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      h4 {
+        font-size: 1.5rem;
+        color: var(--color-primary);
+        font-family: "bold";
+      }
+      p {
+        font-size: 1rem;
+        color: var(--color-secound);
+        font-family: "regular";
+      }
+      .btn {
+        width: 100%;
+        margin-top: 2%;
+      }
+    }
+  }
+}
+// finish modal adver
+
 //  start footer
 footer {
   background-color: var(--background);
