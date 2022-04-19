@@ -1317,6 +1317,172 @@ input::-webkit-inner-spin-button {
 }
 // finish modal adver
 
+
+//start login form
+.login {
+  background-color: var(--color-light);
+  form {
+    margin: 5rem auto;
+    padding: 3rem 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--background);
+    width: 50%;
+    h2 {
+      font-family: "bold";
+      color: var(--color-primary);
+      margin: 1rem 0;
+    }
+    p {
+      font-family: "light";
+      color: var(--color-secound);
+      margin-bottom: 4%;
+    }
+    .input-group{
+      margin-bottom: 4%;
+      .eye-login {
+        position: absolute;
+        top: 22%;
+        left: 3%;
+        z-index: 900;
+        i{
+          color: var(--color-primary);
+        }
+      }
+    }
+    .d-flex{
+      width: 100%;
+      margin: 2%;
+      .form-check {
+        margin: 0;
+        width: 49%;
+        .form-check-label {
+          display: flex;
+          align-items: center;
+          font-family: "regular";
+          color: var(--color-primary);
+          .form-check-input {
+            float: right;
+            margin-left: 0.5em;
+            margin-top: 0;
+            &:checked{
+              background-color: var(--color-six);
+              border-color: var(--color-six);
+            }
+          }
+        }
+      }
+      .forget_btn {
+        width: 49%;
+        text-align: end;
+        display: inline-block;
+        text-decoration: none;
+        font-family: "regular";
+        color: var(--color-primary);
+      }
+    }
+    .btn{
+      width: 100%;
+      margin: 1% 0 3%;
+    }
+   
+  }
+}
+//finish login form
+
+//reset pasword
+.reset_password {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .password_container {
+    background-color: white;
+    border-radius: 12px;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3rem 6rem;
+    width: 50%;
+    h3 {
+      text-align: center;
+      font-family: "bold";
+      color: var(--color-primary);
+    }
+    p {
+      text-align: center;
+      width: 70%;
+      font-size: 1.1rem;
+      margin: 3% auto 5%;
+      font-family: "light";
+      color: var(--color-secound);
+      span{
+        color: var(--color-primary);
+        font-family: 'regular';
+      }
+    }
+   
+
+    .input-group{
+      margin-bottom: 4%;
+      .eye-login {
+        position: absolute;
+        top: 22%;
+        left: 3%;
+        z-index: 900;
+        i{
+          color: var(--color-primary);
+        }
+      }
+    }
+    .form-group.number_code {
+      margin: 0 0.5%;
+      width: 100%;
+      input {
+        width: 15%;
+        display: inline-block;
+        height: 60px;
+        text-align: center;
+        font-size: 2rem;
+      }
+    }
+    .btn{
+      width: 100%;
+      margin-top: 4%;
+    }
+  }
+}
+//reset pasword
+
+
+// black list page
+.list-collection{
+background-color: var(--background);
+padding: 3% 1%;
+text-align: start;
+  h2{
+    color: var(--color-primary);
+    font-size: 1.8rem;
+    font-family: 'bold';
+    margin-bottom: 2%;
+  }
+  h4{
+    color: var(--color-primary);
+    font-size: 1.6rem;
+    font-family: 'bold';
+  }
+  p{
+    color: var(--color-secound);
+    font-size: 1.2rem;
+    font-family: 'regular';
+    margin-bottom: 4%;
+  }
+}
+// black list page
+
+
 //  start footer
 footer {
   background-color: var(--background);
