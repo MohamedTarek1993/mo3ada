@@ -2171,9 +2171,9 @@ input::-webkit-inner-spin-button {
             }
           }
         }
-        .button{
+        .button {
           margin-top: 3%;
-          .btn{
+          .btn {
             width: 35%;
           }
         }
@@ -2183,6 +2183,39 @@ input::-webkit-inner-spin-button {
 }
 
 //person  account
+
+//personal account
+.account-personal {
+  .header {
+  }
+  .tab-contents {
+    padding: 5% 0;
+    .nav-pills {
+      width: 100%;
+      background-color: #FAFAFA;
+      .nav-item {
+        width: 20%;
+        padding: 7px 0;
+        .nav-link{
+          color: #6C6C70;
+          font-family: 'regular';
+        }
+        .nav-link.active{
+          background-color: white;
+          color: var(--color-primary);
+          font-size: 1.1rem;
+          font-family: 'bold';
+          border: 1px solid transparent;
+          box-shadow: 0px 3px 6px rgba($color: #B4B4B4, $alpha: .16);
+          border-radius: 5px;
+        }
+      }
+    }
+    .tab-content {
+    }
+  }
+}
+//personal account
 
 //  start footer
 footer {
