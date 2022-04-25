@@ -14,9 +14,8 @@
     <!-- responsive -->
     <link rel="stylesheet" href="css/responsive.css">
     <!-- responsive -->
-    <!-- select piker -->
-    <link rel="stylesheet" href="css/bootstrap-select.min.css">
-    <!-- select piker -->
+    <!-- notify -->
+    <link rel="stylesheet" href="css/tostify.css">
     <!-- ? Favicon -->
     <link rel="icon" href="./image/logo.png" type="image" />
     <!-- ? Favicon -->
@@ -176,41 +175,263 @@
     </main>
     <!---------------------- finish main index -------------------------------------------->
     <!---------------------- start personal account -------------------------------------------->
-     <section class="account-personal">
-         <div class="container">
-           <div class="header"></div>
-           <!-- tab content -->
-           <div class="tab-contents">
-            <ul class="nav nav-pills" id="pills-tab" role="tablist">
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link active" id="pills-advertisment-tab" data-bs-toggle="pill" data-bs-target="#pills-advertisment" type="button" role="tab" aria-controls="pills-advertisment" aria-selected="true">اعلاناتي</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="pills-message-tab" data-bs-toggle="pill" data-bs-target="#pills-message" type="button" role="tab" aria-controls="pills-message" aria-selected="false">الرسائل</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                  <button class="nav-link" id="pills-favourit-tab" data-bs-toggle="pill" data-bs-target="#pills-favourit" type="button" role="tab" aria-controls="pills-favourit" aria-selected="false">قائمة مفضلاتي</button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-special-tab" data-bs-toggle="pill" data-bs-target="#pills-special" type="button" role="tab" aria-controls="pills-special" aria-selected="false">الخدمات المميزة</button>
-                  </li>
-                  <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="pills-settings-tab" data-bs-toggle="pill" data-bs-target="#pills-settings" type="button" role="tab" aria-controls="pills-settings" aria-selected="false">الاعدادات</button>
-                  </li>
-              </ul>
-              <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-advertisment" role="tabpanel" aria-labelledby="pills-advertisment-tab">1</div>
-                <div class="tab-pane fade" id="pills-message" role="tabpanel" aria-labelledby="pills-message-tab">2</div>
-                <div class="tab-pane fade" id="pills-favourit" role="tabpanel" aria-labelledby="pills-favourit-tab">3</div>
-                <div class="tab-pane fade" id="pills-special" role="tabpanel" aria-labelledby="pills-special-tab">4</div>
-                <div class="tab-pane fade" id="pills-settings" role="tabpanel" aria-labelledby="pills-settings-tab">5</div>
-              </div>
-           </div>
-           <!-- tab content -->
-         </div>
-     </section>
-    <!---------------------- finish personal account -------------------------------------------->
+    <section class="account-personal">
+        <div class="container">
+            <div class="header"></div>
+            <!-- tab content -->
+            <div class="tab-contents">
 
+                <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link active" id="pills-advertisment-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-advertisment" type="button" role="tab"
+                            aria-controls="pills-advertisment" aria-selected="true">اعلاناتي</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-message-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-message" type="button" role="tab" aria-controls="pills-message"
+                            aria-selected="false">الرسائل</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-favourit-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-favourit" type="button" role="tab" aria-controls="pills-favourit"
+                            aria-selected="false">قائمة مفضلاتي</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-special-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-special" type="button" role="tab" aria-controls="pills-special"
+                            aria-selected="false">الخدمات المميزة</button>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <button class="nav-link" id="pills-settings-tab" data-bs-toggle="pill"
+                            data-bs-target="#pills-settings" type="button" role="tab" aria-controls="pills-settings"
+                            aria-selected="false">الاعدادات</button>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-advertisment" role="tabpanel"
+                        aria-labelledby="pills-advertisment-tab">
+
+                        <!-- advertisment -->
+                        <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-all-advertisment-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-all-advertisment" type="button" role="tab"
+                                    aria-controls="pills-all-advertisment" aria-selected="true">كل الإعلانات(4)</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pills-refused-advertisment-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-refused-advertisment" type="button" role="tab"
+                                    aria-controls="pills-refused-advertisment" aria-selected="false">الإعلانات
+                                    المرفوضة(0)</button>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content tab-content-adv" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-all-advertisment" role="tabpanel"
+                                aria-labelledby="pills-all-advertisment-tab">
+                                <!-- ف حاله عدم وجود اعلانات -->
+                                <!-- <div class="not-found">
+                                    <img src="image/not_adver.png" alt="">
+                                    <h4>عفوا ! ليس لديك إعلانات بعد</h4>
+                                    <p>ابدأ الآن بانشاء اعلانك وسيستمر في العرض لمدة 6 اشهر
+                                        و أستكشف خدماتنا ومميزاتنا</p>
+                                    <a href="special-adv.html" class="btn first">اضف اعلانك</a>
+                                </div> -->
+
+                                <!-- ف حاله عدم وجود اعلانات -->
+
+                                <!-- ف حاله  وجود اعلانات -->
+                                <div class="all-order">
+                                    <table class="table-responsive table">
+                                        <thead>
+                                            <tr>
+                                                <th>اسم الإعلان </th>
+                                                <th> الحالة</th>
+                                                <th> رقم الإعلان</th>
+                                                <th>تاريخ الإعلان</th>
+                                                <th>تاريخ الانتهاء </th>
+                                                <th> عدد المشاهدات</th>
+                                                <th>السعر المعروض </th>
+                                                <th> </th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+                                            <!-- في حالة وجود  أعلان مقبول -->
+                                            <tr>
+                                                <td data-label=" اسم الإعلان">
+                                                    <div class="name">
+                                                        <img src="image/person1.png" alt="">
+                                                        <div class="text">
+                                                            <h6>ايفون 11 مستعمل 128 جيجا استعمال خفيف</h6>
+                                                            <p> <i class="bi bi-geo-alt">الرياض , مدينة الخرج </i> </p>
+                                                        </div>
+                                                    </div>
+
+                                                </td>
+                                                <td data-label=" الحالة">
+                                                    <span class="success"> مقبول</span>
+                                                </td>
+                                                <td data-label=" رقم الإعلان">
+                                                    215485215 #
+                                                </td>
+                                                <td data-label=" تاريخ الإعلان">
+                                                    فبراير 22 , 8:30 مساء
+                                                </td>
+                                                <td data-label=" تاريخ الانتهاء">
+                                                    فبراير 22 , 8:30 مساء
+                                                </td>
+                                                <td data-label="   المشاهدات">
+                                                    100
+                                                </td>
+                                                <td data-label="  السعر المعروض">
+                                                    11,500
+                                                </td>
+                                                <td onmouseleave="hideDetials(1)" onmouseenter="showDetials(1)"
+                                                    class="detials-table" data-label=" عرض التفاصيل"><i
+                                                        class="bi bi-three-dots"></i>
+                                                    <ul id="showdetial1" class="show-detials">
+                                                        <li> <a target="_blank" href="product.html">
+                                                                عرض الإعلان
+                                                            </a>
+                                                        </li>
+                                                        <li onclick="puplishOrder()"> تمديد الإعلان</li>
+                                                        <li data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                            حذف الإعلان
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <!-- في حالة وجود  أعلان مقبول -->
+                                            <!-- في حالة وجود طلب   مرفوض -->
+                                            <tr>
+                                                <td data-label=" اسم الإعلان">
+                                                    <div class="name">
+                                                        <img src="image/person1.png" alt="">
+                                                        <div class="text">
+                                                            <h6>ايفون 11 مستعمل 128 جيجا استعمال خفيف</h6>
+                                                            <p> <i class="bi bi-geo-alt">الرياض , مدينة الخرج </i> </p>
+                                                        </div>
+                                                    </div>
+
+                                                </td>
+                                                <td data-label=" الحالة">
+                                                    <span class="reject"> مرفوض</span>
+                                                </td>
+                                                <td data-label=" رقم الإعلان">
+                                                    215485215 #
+                                                </td>
+                                                <td data-label=" تاريخ الإعلان">
+                                                    فبراير 22 , 8:30 مساء
+                                                </td>
+                                                <td data-label=" تاريخ الانتهاء">
+                                                    فبراير 22 , 8:30 مساء
+                                                </td>
+                                                <td data-label="   المشاهدات">
+                                                    100
+                                                </td>
+                                                <td data-label="  السعر المعروض">
+                                                    11,500
+                                                </td>
+                                                <td onmouseleave="hideDetials(1)" onmouseenter="showDetials(1)"
+                                                    class="detials-table" data-label=" عرض التفاصيل"><i
+                                                        class="bi bi-three-dots"></i>
+                                                    <ul id="showdetial1" class="show-detials">
+                                                        <li> <a target="_blank" href="product.html">
+                                                                عرض الإعلان
+                                                            </a>
+                                                        </li>
+                                                        <li onclick="puplishOrder()"> تمديد الإعلان</li>
+                                                        <li data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                            حذف الإعلان
+                                                        </li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                            <!-- في حالة وجود طلب   مرفوض -->
+
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <!-- ف حاله  وجود اعلانات -->
+
+                            </div>
+                            <div class="tab-pane fade" id="pills-refused-advertisment" role="tabpanel"
+                                aria-labelledby="pills-refused-advertisment-tab">
+                                <!-- ف حاله عدم وجود اعلانات -->
+                                <div class="not-found">
+                                    <img src="image/not_adver.png" alt="">
+                                    <h4>عفوا ! ليس لديك إعلانات بعد</h4>
+                                    <p>ابدأ الآن بانشاء اعلانك وسيستمر في العرض لمدة 6 اشهر
+                                        و أستكشف خدماتنا ومميزاتنا</p>
+                                    <a href="special-adv.html" class="btn first">اضف اعلانك</a>
+                                </div>
+
+
+                                <!-- ف حاله عدم وجود اعلانات -->
+
+                            </div>
+                        </div>
+                        <!-- advertisment -->
+
+                    </div>
+                    <div class="tab-pane fade" id="pills-message" role="tabpanel" aria-labelledby="pills-message-tab">
+
+                        <!-- message -->
+                        <!-- ف حاله عدم وجود رسائل -->
+                        <!-- <div class="not-found">
+                            <img src="image/no message.png" alt="">
+                            <h4> عفوا ! ليس لديك رسائل بعد </h4>
+                            <p>سيتم تنبيهك عند ورود أي رسائل اليك , من فضلك انتبة
+                                لرسائلك فهي حلقة الوصل مع المشتري عندما تقوم بعمل اعلان جديد عن منتج</p>
+                       
+                        </div> -->
+
+                        <!-- ف حاله عدم وجود رسائل -->
+                        <!-- ف حاله عدم وجود رسائل -->
+
+
+                        <!-- ف حاله عدم وجود رسائل -->
+
+                        <!-- message -->
+
+                    </div>
+                    <div class="tab-pane fade" id="pills-favourit" role="tabpanel" aria-labelledby="pills-favourit-tab">
+                        3</div>
+                    <div class="tab-pane fade" id="pills-special" role="tabpanel" aria-labelledby="pills-special-tab">4
+                    </div>
+                    <div class="tab-pane fade" id="pills-settings" role="tabpanel" aria-labelledby="pills-settings-tab">
+                        5</div>
+                </div>
+            </div>
+            <!-- tab content -->
+        </div>
+    </section>
+    <!---------------------- finish personal account -------------------------------------------->
+    <!-- modal finish work -->
+    <div class="modal fade modal-remove" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5>سبب الحذف</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="content">
+                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد النص
+                            العربى، حيث يمكنك أن تولد مثل هذا النص أو العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف
+                            التى يولدها التطبيق.
+                        </p>
+                        <button class="first btn">إعادة نشر الإعلان</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal finish work -->
 
 
 
@@ -220,6 +441,43 @@
     <script src="js/main.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <!-- main js -->
+    <!-- notify -->
+    <script src="js/tostify.js"></script>
+    <!-- notify -->
+    <!-- show && hide detials -->
+    <script>
+        function showDetials(id) {
+            $(`#showdetial${id}`).css({ "display": "flex" })
+
+        }
+        function hideDetials(id) {
+            $(`#showdetial${id}`).css("display", "none");
+        }
+    </script>
+    <!-- show && hide detials -->
+    <!-- Toastify of puplish order -->
+    <script>
+        function puplishOrder() {
+            Toastify({
+                text: "تم  تمديد الأعلان",
+                duration: 2500,
+                destination: "https://github.com/apvarun/toastify-js",
+                newWindow: true,
+                // close: true,
+                gravity: "top", // `top` or `bottom`
+                position: "right", // `left`, `center` or `right`
+                stopOnFocus: true, // Prevents dismissing of toast on hover
+                style: {
+                    background: "linear-gradient(to right, #bf8c6d, #0c1321)",
+                    // width: '400px',
+                    // padding:'2% 1%',
+                    borderRaduis: '5px'
+                },
+                onClick: function () { } // Callback after click
+            }).showToast();
+        }
+    </script>
+    <!-- Toastify of puplish order -->
 </body>
 
 </html>
