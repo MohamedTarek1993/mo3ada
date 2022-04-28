@@ -2242,6 +2242,7 @@ input::-webkit-inner-spin-button {
           }
         }
       }
+      // adv
       .tab-content-adv {
         .not-found {
           display: flex;
@@ -2277,10 +2278,10 @@ input::-webkit-inner-spin-button {
           margin-top: 10px;
           background-color: var(--background2);
           position: relative;
-          border: 1px solid #8D8D8D;
+          border: 1px solid #8d8d8d;
           border-radius: 10px;
           thead {
-            border-bottom: 1px solid #8D8D8D;
+            border-bottom: 1px solid #8d8d8d;
             border-radius: 10px;
             th {
               color: #2e2c34;
@@ -2294,12 +2295,10 @@ input::-webkit-inner-spin-button {
             }
           }
           tbody {
-         
             border-radius: 10px;
-           
           }
           td {
-            border-bottom: 1px solid #8D8D8D;
+            border-bottom: 1px solid #8d8d8d;
             border-radius: 10px;
             .name {
               display: flex;
@@ -2368,18 +2367,16 @@ input::-webkit-inner-spin-button {
                 padding: 2% 0;
 
                 a {
-                  color: var(--color-primary) ;
-                  &:hover{
+                  color: var(--color-primary);
+                  &:hover {
                     color: var(--background) !important;
                   }
                 }
 
                 &:hover {
-                  background-color: var(--color-six) ;
+                  background-color: var(--color-six);
                   color: var(--background);
                   border-radius: 5px;
-
-                
                 }
               }
             }
@@ -2390,7 +2387,7 @@ input::-webkit-inner-spin-button {
           }
 
           td {
-            border-bottom: 1px solid #8D8D8D;
+            border-bottom: 1px solid #8d8d8d;
             text-align: center;
             font-family: "bold";
             font-size: 12px;
@@ -2399,6 +2396,12 @@ input::-webkit-inner-spin-button {
           }
         }
       }
+      // adv
+      //settings
+        .settings{
+          
+        }
+      //settings
     }
   }
 }
@@ -2603,14 +2606,14 @@ footer {
         }
       }
     }
-    .content{
+    .content {
       display: flex;
       justify-content: center;
       align-items: center;
       padding: 2% 1%;
       flex-direction: column;
-      p{
-        font-family: 'regular';
+      p {
+        font-family: "regular";
         margin-bottom: 5%;
       }
     }
