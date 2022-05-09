@@ -600,9 +600,9 @@
                                             <img src="image/icon4.png" alt="">
                                             نظام الخصم
                                         </button>
-                                        <button class="nav-link" id="v-pills-setting-tab" data-bs-toggle="pill"
-                                            data-bs-target="#v-pills-setting" type="button" role="tab"
-                                            aria-controls="v-pills-setting" aria-selected="false">
+                                        <button class="nav-link" id="v-pills-black-tab" data-bs-toggle="pill"
+                                            data-bs-target="#v-pills-black" type="button" role="tab"
+                                            aria-controls="v-pills-black" aria-selected="false">
                                             <img src="image/icon5.png" alt="">
                                             القائمة السوداء
                                         </button>
@@ -619,26 +619,36 @@
 
                                             <div class="setting-general">
                                                 <h4>الاعدادات العامة</h4>
-                                                <form action="">
-                                                    <div class="input-group">
-                                                        <label for="user" class="form-label">اسم المستخدم</label>
-                                                        <input type="text" name="user" id="user" class="form-control">
-                                                    </div>
-                                                    <div class="input-group">
-                                                        <div class="col-9 px-0 ">
-                                                            <input type="number" class="form-control w-100"
-                                                                placeholder=" رقم الجوال" required>
+                                                <form >
+
+                                                    <div class="row">
+                                                       
+                                                        <div class="col-6">
+                                                            <div class="input-group"> 
+                                                                <label for="user" class="form-label">اسم المستخدم</label>  
+                                                                <input type="text" name="user" id="user" class="form-control" placeholder="أسم المستخدم">
+                                                            </div>
                                                         </div>
-                                                        <div class="col-3 px-0">
-                                                            <select class="form-select w-100"
-                                                                aria-label="Default select example">
-                                                                <option selected> +366</option>
-                                                                <option value="1">1</option>
-                                                                <option value="2">2</option>
-                                                                <option value="3">3</option>
-                                                            </select>
+                                                        <div class="col-6">
+                                                            <label for="user" class="form-label"> رقم الجوال</label>
+                                                            <div class="input-group">
+                                                                <div class="col-9 px-0 ">
+                                                                    <input type="number" class="form-control w-100"
+                                                                        placeholder=" رقم الجوال" required>
+                                                                </div>
+                                                                <div class="col-3 px-0">
+                                                                    <select class="form-select w-100"
+                                                                        aria-label="Default select example">
+                                                                        <option selected> +366</option>
+                                                                        <option value="1">1</option>
+                                                                        <option value="2">2</option>
+                                                                        <option value="3">3</option>
+                                                                    </select>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
+                                                   
                                                     <div class="button">
                                                         <button class="second btn" type="submit">حفظ البيانات</button>
                                                     </div>
@@ -648,19 +658,27 @@
                                             <div class="change-password">
                                                 <h4>اعدادات الأمان</h4>
                                                 <form action="">
-                                                    <div class="input-group">
+                                                    <div class="row">
+                                                        <div class="col-6">
+   <div class="input-group">
                                                         <label for="email" class="form-label"> البريد الالكتروني
                                                             (اختياري )</label>
-                                                        <input type="email" name="email" id="email"
+                                                        <input required type="email" name="email" id="email"
                                                             class="form-control">
                                                     </div>
-                                                    <div class="input-group">
-                                                        <label for="pass" class="form-label"> كلمة المرور</label>
-                                                        <input type="password" name="pass" id="pass"
-                                                            class="form-control">
+                                                        </div>
+                                                        <div class="col-6">
+                                                            <div class="input-group">
+                                                                <label for="pass" class="form-label"> كلمة المرور</label>
+                                                                <input required type="password" name="pass" id="pass"
+                                                                    class="form-control">
+                                                            </div>
+                                                        </div>
                                                     </div>
+                                                 
                                                     <div class="button">
-                                                        <button class="second btn" type="submit"> تغيير كلمة
+                                                        <button class="btn second" data-bs-toggle="modal"
+                                                            data-bs-target="#exampleModal-2" type="button"> تغيير كلمة
                                                             المرور</button>
                                                     </div>
                                                 </form>
@@ -823,22 +841,330 @@
                                         <div class="tab-pane fade" id="v-pills-messages" role="tabpanel"
                                             aria-labelledby="v-pills-messages-tab">...</div>
                                         <div class="tab-pane fade" id="v-pills-settings" role="tabpanel"
-                                            aria-labelledby="v-pills-settings-tab">...</div>
-                                        <div class="tab-pane fade" id="v-pills-setting" role="tabpanel"
-                                            aria-labelledby="v-pills-setting-tab">...</div>
+                                            aria-labelledby="v-pills-settings-tab">
+                                            <!-- discont system -->
+                                            <h2> نظام الخصم</h2>
+                                            <span>انت لست موثق بعد</span>
+                                            <div class="member-docum">
+                                                <div class="py-4">
+                                                    <h4> ماهو نظام الخصم</h4>
+                                                    <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد
+                                                        هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
+                                                        العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها
+                                                        التطبيق.
+                                                    </p>
+                                                </div>
+                                                <div class="py-4">
+                                                    <h4> هل لي خصم في الوقت الحالي ؟</h4>
+                                                    <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد
+                                                        هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
+                                                        العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها
+                                                        التطبيق.
+                                                    </p>
+                                                </div>
+                                                <div class="common-anaser">
+                                                    <h4>أسألةذات صلة</h4>
+                                                    <div class="accordion" id="accordionExample">
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="headingOne">
+                                                                <button class="accordion-button" type="button"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                                    aria-controls="collapseOne">
+                                                                    لدى عضوية موثوقة وخالفت الأوامر ماذا يحدث ؟
+                                                                </button>
+                                                            </h2>
+                                                            <div id="collapseOne"
+                                                                class="accordion-collapse collapse show"
+                                                                aria-labelledby="headingOne"
+                                                                data-bs-parent="#accordionExample">
+                                                                <div class="accordion-body">
+                                                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،
+                                                                    لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك
+                                                                    أن تولد مثل هذا النص أو العديد من النصوص الأخرى
+                                                                    إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+
+                                                                    إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد
+                                                                    النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو
+                                                                    مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد
+                                                                    لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى
+                                                                    كثير من الأحيان أن يطلع على صورة حقيقية لتصميم
+                                                                    الموقع.
+                                                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،
+                                                                    لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك
+                                                                    أن تولد مثل هذا النص أو العديد من النصوص الأخرى
+                                                                    إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+
+                                                                    إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد
+                                                                    النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو
+                                                                    مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد
+                                                                    لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى
+                                                                    كثير من الأحيان أن يطلع على صورة حقيقية لتصميم
+                                                                    الموقع.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="headingTwo">
+                                                                <button class="accordion-button collapsed" type="button"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#collapseTwo" aria-expanded="false"
+                                                                    aria-controls="collapseTwo">
+                                                                    لدى عضوية موثوقة وخالفت الأوامر ماذا يحدث ؟
+                                                                </button>
+                                                            </h2>
+                                                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                                                aria-labelledby="headingTwo"
+                                                                data-bs-parent="#accordionExample">
+                                                                <div class="accordion-body">
+                                                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،
+                                                                    لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك
+                                                                    أن تولد مثل هذا النص أو العديد من النصوص الأخرى
+                                                                    إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+
+                                                                    إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد
+                                                                    النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو
+                                                                    مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد
+                                                                    لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى
+                                                                    كثير من الأحيان أن يطلع على صورة حقيقية لتصميم
+                                                                    الموقع.
+                                                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،
+                                                                    لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك
+                                                                    أن تولد مثل هذا النص أو العديد من النصوص الأخرى
+                                                                    إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+
+                                                                    إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد
+                                                                    النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو
+                                                                    مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد
+                                                                    لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى
+                                                                    كثير من الأحيان أن يطلع على صورة حقيقية لتصميم
+                                                                    الموقع. </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="headingThree">
+                                                                <button class="accordion-button collapsed" type="button"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#collapseThree"
+                                                                    aria-expanded="false" aria-controls="collapseThree">
+                                                                    لدى عضوية موثوقة وخالفت الأوامر ماذا يحدث ؟
+                                                                </button>
+                                                            </h2>
+                                                            <div id="collapseThree" class="accordion-collapse collapse"
+                                                                aria-labelledby="headingThree"
+                                                                data-bs-parent="#accordionExample">
+                                                                <div class="accordion-body">
+                                                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،
+                                                                    لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك
+                                                                    أن تولد مثل هذا النص أو العديد من النصوص الأخرى
+                                                                    إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+
+                                                                    إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد
+                                                                    النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو
+                                                                    مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد
+                                                                    لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى
+                                                                    كثير من الأحيان أن يطلع على صورة حقيقية لتصميم
+                                                                    الموقع.
+                                                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،
+                                                                    لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك
+                                                                    أن تولد مثل هذا النص أو العديد من النصوص الأخرى
+                                                                    إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+
+                                                                    إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد
+                                                                    النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو
+                                                                    مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد
+                                                                    لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى
+                                                                    كثير من الأحيان أن يطلع على صورة حقيقية لتصميم
+                                                                    الموقع. </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- discont system -->
+                                            </div>
+                                            <div class="tab-pane fade" id="v-pills-setting" role="tabpanel"
+                                                aria-labelledby="v-pills-setting-tab">...</div>
+                                        </div>
+                                        <div class="tab-pane fade" id="v-pills-black" role="tabpanel"
+                                            aria-labelledby="v-pills-black-tab">
+                                            <!-- backlist menu -->
+                                            <h4>القائمة السوداء</h4>
+                                            <span>ادخل الرقم الذي تود معرفة اذا كان مضافا الي القائمة السوداء ام
+                                                لا</span>
+                                            <div class="enter-mobile">
+                                                <h6>أدخل رقم الجوال</h6>
+                                                <div class="input-group">
+                                                    <label for="" class="form-label">رقم الموبيل</label>
+                                                    <div class="col-9 px-0 ">
+                                                        <input type="number" class="form-control w-100"
+                                                            placeholder=" رقم الجوال" required>
+                                                    </div>
+                                                    <div class="col-3 px-0">
+                                                        <select class="form-select w-100"
+                                                            aria-label="Default select example">
+                                                            <option selected> +366</option>
+                                                            <option value="1">1</option>
+                                                            <option value="2">2</option>
+                                                            <option value="3">3</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="button">
+                                                    <button class="first btn">أبحث</button>
+                                                </div>
+                                            </div>
+                                            <div class="member-docum">
+                                                <div class="py-4">
+                                                    <h4> ماهو نظام الخصم</h4>
+                                                    <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد
+                                                        هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
+                                                        العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها
+                                                        التطبيق.
+                                                    </p>
+                                                </div>
+                                                <div class="py-4">
+                                                    <h4> هل لي خصم في الوقت الحالي ؟</h4>
+                                                    <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد
+                                                        هذا النص من مولد النص العربى، حيث يمكنك أن تولد مثل هذا النص أو
+                                                        العديد من النصوص الأخرى إضافة إلى زيادة عدد الحروف التى يولدها
+                                                        التطبيق.
+                                                    </p>
+                                                </div>
+                                                <div class="common-anaser">
+                                                    <h4>أسألةذات صلة</h4>
+                                                    <div class="accordion" id="accordionExample">
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="headingOne">
+                                                                <button class="accordion-button" type="button"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#collapseOne" aria-expanded="true"
+                                                                    aria-controls="collapseOne">
+                                                                    لدى عضوية موثوقة وخالفت الأوامر ماذا يحدث ؟
+                                                                </button>
+                                                            </h2>
+                                                            <div id="collapseOne"
+                                                                class="accordion-collapse collapse show"
+                                                                aria-labelledby="headingOne"
+                                                                data-bs-parent="#accordionExample">
+                                                                <div class="accordion-body">
+                                                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،
+                                                                    لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك
+                                                                    أن تولد مثل هذا النص أو العديد من النصوص الأخرى
+                                                                    إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+
+                                                                    إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد
+                                                                    النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو
+                                                                    مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد
+                                                                    لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى
+                                                                    كثير من الأحيان أن يطلع على صورة حقيقية لتصميم
+                                                                    الموقع.
+                                                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،
+                                                                    لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك
+                                                                    أن تولد مثل هذا النص أو العديد من النصوص الأخرى
+                                                                    إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+
+                                                                    إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد
+                                                                    النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو
+                                                                    مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد
+                                                                    لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى
+                                                                    كثير من الأحيان أن يطلع على صورة حقيقية لتصميم
+                                                                    الموقع.
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="headingTwo">
+                                                                <button class="accordion-button collapsed" type="button"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#collapseTwo" aria-expanded="false"
+                                                                    aria-controls="collapseTwo">
+                                                                    لدى عضوية موثوقة وخالفت الأوامر ماذا يحدث ؟
+                                                                </button>
+                                                            </h2>
+                                                            <div id="collapseTwo" class="accordion-collapse collapse"
+                                                                aria-labelledby="headingTwo"
+                                                                data-bs-parent="#accordionExample">
+                                                                <div class="accordion-body">
+                                                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،
+                                                                    لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك
+                                                                    أن تولد مثل هذا النص أو العديد من النصوص الأخرى
+                                                                    إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+
+                                                                    إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد
+                                                                    النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو
+                                                                    مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد
+                                                                    لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى
+                                                                    كثير من الأحيان أن يطلع على صورة حقيقية لتصميم
+                                                                    الموقع.
+                                                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،
+                                                                    لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك
+                                                                    أن تولد مثل هذا النص أو العديد من النصوص الأخرى
+                                                                    إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+
+                                                                    إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد
+                                                                    النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو
+                                                                    مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد
+                                                                    لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى
+                                                                    كثير من الأحيان أن يطلع على صورة حقيقية لتصميم
+                                                                    الموقع. </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="headingThree">
+                                                                <button class="accordion-button collapsed" type="button"
+                                                                    data-bs-toggle="collapse"
+                                                                    data-bs-target="#collapseThree"
+                                                                    aria-expanded="false" aria-controls="collapseThree">
+                                                                    لدى عضوية موثوقة وخالفت الأوامر ماذا يحدث ؟
+                                                                </button>
+                                                            </h2>
+                                                            <div id="collapseThree" class="accordion-collapse collapse"
+                                                                aria-labelledby="headingThree"
+                                                                data-bs-parent="#accordionExample">
+                                                                <div class="accordion-body">
+                                                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،
+                                                                    لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك
+                                                                    أن تولد مثل هذا النص أو العديد من النصوص الأخرى
+                                                                    إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+
+                                                                    إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد
+                                                                    النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو
+                                                                    مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد
+                                                                    لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى
+                                                                    كثير من الأحيان أن يطلع على صورة حقيقية لتصميم
+                                                                    الموقع.
+                                                                    هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة،
+                                                                    لقد تم توليد هذا النص من مولد النص العربى، حيث يمكنك
+                                                                    أن تولد مثل هذا النص أو العديد من النصوص الأخرى
+                                                                    إضافة إلى زيادة عدد الحروف التى يولدها التطبيق.
+
+                                                                    إذا كنت تحتاج إلى عدد أكبر من الفقرات يتيح لك مولد
+                                                                    النص العربى زيادة عدد الفقرات كما تريد، النص لن يبدو
+                                                                    مقسما ولا يحوي أخطاء لغوية، مولد النص العربى مفيد
+                                                                    لمصممي المواقع على وجه الخصوص، حيث يحتاج العميل فى
+                                                                    كثير من الأحيان أن يطلع على صورة حقيقية لتصميم
+                                                                    الموقع. </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- discont system -->
+                                            </div>
+
+                                            <!-- backlist menu -->
+                                        </div>
                                     </div>
+
                                 </div>
-
                             </div>
+
+                            <!-- settings -->
+
                         </div>
-
-                        <!-- settings -->
-
                     </div>
                 </div>
+                <!-- tab content -->
             </div>
-            <!-- tab content -->
-        </div>
     </section>
     <!---------------------- finish personal account -------------------------------------------->
     <!-- modal finish work -->
@@ -867,48 +1193,85 @@
     <!-- modal Membership documentation  -->
     <div class="modal fade" id="exampleModal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
-          <div class="modal-content">
-         
-            <div class="modal-body">
-              <h4>توثيق العضوية</h4>
-              <p>من فضلك قم بملئ البيانات التالية حتي نساعدك في توثيق
-                عضويتك في معاوضة </p>
-                <form action="">
-                    <div class="input-group">
-                        <label  class="form-label"> النشاط التجاري</label>
-                        <input type="text" class="form-control" placeholder="">
-                    </div>
-                    <div class="input-group">
-                        <label  class="form-label">  اسم المنشأة</label>
-                        <input type="text" class="form-control" placeholder="اسم المنشأة">
-                    </div>
-                    <div class="input-group">
-                        <label  class="form-label">  اسم مقدم الطلب</label>
-                        <input type="text" class="form-control" placeholder="اسم مقدم الطلب">
-                    </div>
-                    <div class="input-group">
-                        <label  class="form-label">  رقم الجوال  </label>
-                        <input type="number" class="form-control" placeholder="  رقم الجوال">
-                    </div>
-                    <div class="input-group">
-                        <label  class="form-label">   الموقع الالكتروني  </label>
-                        <input type="number" class="form-control" placeholder="  الموقع الالكتروني ">
-                    </div>
-                    <div class="input-group">
-                        <label  class="form-label">    إضافة ملاحظات  </label>
-                        <textarea  class="form-control" placeholder="دون ملاحظاتك هنا
-                        +-" ></textarea>
-                    </div>
-                </form>
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <h4>توثيق العضوية</h4>
+                    <p>من فضلك قم بملئ البيانات التالية حتي نساعدك في توثيق
+                        عضويتك في معاوضة </p>
+                    <form action="">
+                        <div class="input-group">
+                            <label class="form-label"> النشاط التجاري</label>
+                            <input type="text" class="form-control" placeholder="" required>
+                        </div>
+                        <div class="input-group">
+                            <label class="form-label"> اسم المنشأة</label>
+                            <input type="text" class="form-control" placeholder="اسم المنشأة" required>
+                        </div>
+                        <div class="input-group">
+                            <label class="form-label"> اسم مقدم الطلب</label>
+                            <input type="text" class="form-control" placeholder="اسم مقدم الطلب" required>
+                        </div>
+                        <div class="input-group">
+                            <label class="form-label"> رقم الجوال </label>
+                            <input type="number" class="form-control" placeholder="  رقم الجوال" required>
+                        </div>
+                        <div class="input-group">
+                            <label class="form-label"> الموقع الالكتروني </label>
+                            <input type="number" class="form-control" placeholder="  الموقع الالكتروني " required>
+                        </div>
+                        <div class="input-group">
+                            <label class="form-label"> إضافة ملاحظات </label>
+                            <textarea class="form-control" placeholder="دون ملاحظاتك هنا "></textarea>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+                            <label class="form-check-label" for="flexCheckDefault">
+                                أوافق على الشروط والأحكام بموقع معاوضة
+                            </label>
+
+                        </div>
+                        <button class="first btn" type="submit"> ارسال الطلب</button>
+                    </form>
+                </div>
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Save changes</button>
-            </div>
-          </div>
         </div>
-      </div>
+    </div>
     <!-- modal Membership documentation  -->
+    <!-- modal change password  -->
+    <div class="modal fade" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <h4>كلمة المرور الجديدة</h4>
+                    <p>أدخل كلمة مرور قوية تحتوي على الأقل على 8 حروف مكونة
+                        من أرقام ورموز</p>
+                    <form action="login.html">
+                        <div class="input-group">
+                            <input type="password" name="" id="myInput1" class="form-control"
+                                placeholder="كلمة المرور القديمة " required>
+                            <span class="eye-login"><i onclick="myFunction1(3)" id="id3" class="bi bi-eye"></i></span>
+                        </div>
+
+                        <div class="input-group">
+                            <input type="password" name="" id="myInput1" class="form-control"
+                                placeholder=" كلمة المرور " required>
+                            <span class="eye-login"><i onclick="myFunction1(1)" id="id1" class="bi bi-eye"></i></span>
+                        </div>
+                        <div class="input-group">
+
+                            <input type="password" id="myInput2" name="" class="form-control"
+                                placeholder=" تأكيد كلمة المرور" required>
+                            <span class="eye-login"><i onclick="myFunction1(2)" id="id2" class="bi bi-eye"></i></span>
+                        </div>
+                        <button type="submit" class="btn first"> حفظ</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- modal change password   -->
 
 
 
@@ -955,6 +1318,33 @@
         }
     </script>
     <!-- Toastify of puplish order -->
+    <!-- show-hide password -->
+    <script>
+        function myFunction1(id) {
+            var x = document.getElementById("myInput1");
+            if (x.type === "password") {
+                x.type = "text";
+            } else {
+                x.type = "password";
+            }
+            var y = document.getElementById("myInput2");
+            if (y.type === "password") {
+                y.type = "text";
+            } else {
+                y.type = "password";
+            }
+            $(`#id${id}`).toggleClass("bi-eye bi-eye-slash");
+        }
+    </script>
+    <!-- show-hide password -->
+    <!-- validiton button -->
+    <script>
+        valBtn = document.getElementById('btn-val');
+        function correctData() {
+            valBtn.removeAttribute('disabled');
+        }
+    </script>
+    <!-- validiton button -->
 </body>
 
 </html>
