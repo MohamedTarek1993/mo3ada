@@ -64,14 +64,14 @@ p {
 }
 .form-control,
 .selectpicker {
-  border-radius: 8px;
+  // border-radius: 8px;
   padding-right: 2%;
   background-color: var(--background);
   font-family: "regular";
   width: 92%;
 }
 .form-select {
-  border-radius: 8px;
+  // border-radius: 8px;
   padding: 0.54rem 1.4rem;
   font-family: "regular";
   font-size: 0.8rem;
@@ -1642,12 +1642,111 @@ input::-webkit-inner-spin-button {
   padding: 5% 0;
   .x {
     border: 1px solid #8d8d8d;
+    /* upload */
+    .profile-pic-div {
+      height: 100%;
+      width: 100%;
+      // position: absolute;
+      // top: 7%;
+      // left: 50%;
+      // transform: translate(0, 6%);
+      // border-radius: 50%;
+      // overflow: hidden;
+      // border: 1px solid grey;
+    }
+
+    #photo {
+      height: 100%;
+      width: 100%;
+    }
+    #file {
+      display: none;
+    }
+    #uploadBtn {
+      position: absolute;
+      bottom: 40px;
+      left: 9%;
+      text-align: center;
+      /* line-height: 30px; */
+      cursor: pointer;
+      transition: 0.25s all ease;
+      /* display: none; */
+      span {
+        width: 47px;
+        height: 47px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50%;
+        background-color: var(--background);
+        i {
+          font-size: 25px;
+          color: var(--color-six);
+        }
+      }
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+    /* upload */
+
+    // upload profile
+.upload-img{
+  width: 50%;
+  position: relative;
+  .profile-pic-div {
+    height: 49%;
+    width: 15%;
+  
+  }
+
+  #photo1 {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+  }
+  #file1 {
+    display: none;
+  }
+  #uploadBtn1 {
+    position: absolute;
+    bottom: 40px;
+    left: 9%;
+    text-align: center;
+    /* line-height: 30px; */
+    cursor: pointer;
+    transition: 0.25s all ease;
+    /* display: none; */
+    span {
+      width: 47px;
+      height: 47px;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      background-color: var(--background);
+      i {
+        font-size: 25px;
+        color: var(--color-six);
+      }
+    }
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+    // upload profile
+
     .head {
       background-image: url(../image/cover.png);
       background-position: center;
       background-size: cover;
       height: 300px;
       position: relative;
+     
+      
       span {
         position: absolute;
         left: 3%;
@@ -2705,7 +2804,8 @@ input::-webkit-inner-spin-button {
               font-size: 1rem;
             }
             .setting-general,
-            .change-password {
+            .change-password,
+            .enter-mobile {
               border: 1px solid #8d8d8d;
               padding: 1% 2% 0%;
               margin: 1% 0;
@@ -2751,21 +2851,24 @@ input::-webkit-inner-spin-button {
                   margin-right: auto;
                   margin-left: 0;
                 }
-              }.accordion-button::after{
+              }
+              .accordion-button::after {
                 margin-right: auto;
                 margin-left: 0;
               }
-              .accordion-body{
+              .accordion-body {
                 font-family: "light";
                 font-size: 1rem;
               }
             }
-            .enter-mobile{
-              border: 1px solid #8d8d8d;
-              padding: 1% 2% 0%;
-              margin: 1% 0;
-              h6{
-                color
+            .enter-mobile {
+              .button {
+                padding: 3% 0 1%;
+                .btn {
+                  padding: 1% 0px;
+                  width: 100%;
+                  border-radius: 0;
+                }
               }
             }
           }
@@ -2986,6 +3089,58 @@ footer {
       p {
         font-family: "regular";
         margin-bottom: 5%;
+      }
+    }
+  }
+}
+#exampleModal-1,
+#exampleModal-2 {
+  .modal-dialog {
+    .modal-header {
+      border-bottom: unset;
+    }
+    .modal-body {
+      h4 {
+        font-size: 1.1rem;
+        color: var(--color-six);
+        font-family: "bold";
+      }
+      p {
+        font-size: 0.9rem;
+        color: var(--color-secound);
+        font-family: "light";
+        padding-bottom: 3%;
+      }
+      form {
+        .input-group {
+          margin-bottom: 3%;
+          position: relative;
+          .eye-login {
+            position: absolute;
+            top: 22%;
+            left: 3%;
+            z-index: 900;
+            i {
+              color: var(--color-primary);
+            }
+          }
+        }
+        .form-check {
+          margin-bottom: 8%;
+          padding-left: 1%;
+          .form-check-label {
+            margin-right: 10%;
+            font-size: 0.8rem;
+            font-family: "regular";
+          }
+          .form-check-input {
+            float: right;
+            &:checked {
+              background-color: var(--color-six);
+              border-color: var(--color-six);
+            }
+          }
+        }
       }
     }
   }

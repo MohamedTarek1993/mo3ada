@@ -174,6 +174,66 @@
         <!--second header -->
     </main>
     <!---------------------- finish main index -------------------------------------------->
+
+    <!---------------------- start header -------------------------------------------->
+    <section class="account-person">
+        <div class="container">
+            <div class="x">
+                <div class="upl position-relative">
+                    <div class="profile-pic-div">
+                        <img src="image/cover.png" id="photo">
+                        <input type="file" id="file">
+            
+                    </div>
+                    <label for="file" id="uploadBtn">
+                       <span><i class="bi bi-camera-fill"></i></span>
+                    </label>
+                </div>
+                <div class="upload-img">
+                    <div class="upl position-relative">
+                        <div class="profile-pic-div">
+                            <img src="image/cover.png" id="photo1">
+                            <input type="file" id="file1">
+                
+                        </div>
+                        <label for="file" id="uploadBtn1">
+                           <span><i class="bi bi-camera-fill"></i></span>
+                        </label>
+                    </div>
+                </div>
+              
+
+                <div class="content">
+                    <div class="info">
+                        <div class="rates">
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill"></i>
+                            <i class="bi bi-star-fill r"></i>
+                            <i class="bi bi-star-fill r"></i>
+                            <span>122 تقييم</span>
+                        </div>
+                        <div class="notes">
+                            <p> <i class="bi bi-clock"></i> خر ظهور
+                                <span>: قبل 57 دقيقة</span>
+                            </p>
+                            <p> <i class="bi bi-calendar"></i> تاريخ الانضمام
+                                <span>: : فبراير 22 -2020</span>
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="button">
+                       
+                        <a href="#" class="btn second"><i class="bi bi-pencil-square"></i> تعديل بياناتي</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!---------------------- finish header -------------------------------------------->
+
     <!---------------------- start personal account -------------------------------------------->
     <section class="account-personal">
         <div class="container">
@@ -208,6 +268,7 @@
                             aria-selected="false">الاعدادات</button>
                     </li>
                 </ul>
+
                 <div class="tab-content" id="pills-tabContent">
                     <div class="tab-pane fade show active" id="pills-advertisment" role="tabpanel"
                         aria-labelledby="pills-advertisment-tab">
@@ -572,7 +633,7 @@
 
                         <div class="settings">
                             <div class="row">
-                                <div class="col-lg-4">
+                                <div class="col-lg-4 col-md-3 col-12">
                                     <h2>الاعدادات العامة</h2>
                                     <div class="nav nav-settings flex-column nav-pills " id="v-pills-tab" role="tablist"
                                         aria-orientation="vertical">
@@ -609,7 +670,7 @@
                                     </div>
                                 </div>
 
-                                <div class="col-lg-8">
+                                <div class="col-lg-8 col-md-9 col-12">
 
                                     <div class="tab-content tab-setting" id="v-pills-tabContent">
                                         <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel"
@@ -619,17 +680,19 @@
 
                                             <div class="setting-general">
                                                 <h4>الاعدادات العامة</h4>
-                                                <form >
+                                                <form>
 
                                                     <div class="row">
-                                                       
-                                                        <div class="col-6">
-                                                            <div class="input-group"> 
-                                                                <label for="user" class="form-label">اسم المستخدم</label>  
-                                                                <input type="text" name="user" id="user" class="form-control" placeholder="أسم المستخدم">
+
+                                                        <div class="col-lg-6 col-12">
+                                                            <div class="input-group">
+                                                                <label for="user" class="form-label">اسم
+                                                                    المستخدم</label>
+                                                                <input type="text" name="user" id="user"
+                                                                    class="form-control" placeholder="أسم المستخدم">
                                                             </div>
                                                         </div>
-                                                        <div class="col-6">
+                                                        <div class="col-lg-6 col-12">
                                                             <label for="user" class="form-label"> رقم الجوال</label>
                                                             <div class="input-group">
                                                                 <div class="col-9 px-0 ">
@@ -648,7 +711,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                   
+
                                                     <div class="button">
                                                         <button class="second btn" type="submit">حفظ البيانات</button>
                                                     </div>
@@ -659,23 +722,24 @@
                                                 <h4>اعدادات الأمان</h4>
                                                 <form action="">
                                                     <div class="row">
-                                                        <div class="col-6">
-   <div class="input-group">
-                                                        <label for="email" class="form-label"> البريد الالكتروني
-                                                            (اختياري )</label>
-                                                        <input required type="email" name="email" id="email"
-                                                            class="form-control">
-                                                    </div>
-                                                        </div>
-                                                        <div class="col-6">
+                                                        <div class="col-lg-6 col-12">
                                                             <div class="input-group">
-                                                                <label for="pass" class="form-label"> كلمة المرور</label>
+                                                                <label for="email" class="form-label"> البريد الالكتروني
+                                                                    (اختياري )</label>
+                                                                <input required type="email" name="email" id="email"
+                                                                    class="form-control">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6 col-12">
+                                                            <div class="input-group">
+                                                                <label for="pass" class="form-label"> كلمة
+                                                                    المرور</label>
                                                                 <input required type="password" name="pass" id="pass"
                                                                     class="form-control">
                                                             </div>
                                                         </div>
                                                     </div>
-                                                 
+
                                                     <div class="button">
                                                         <button class="btn second" data-bs-toggle="modal"
                                                             data-bs-target="#exampleModal-2" type="button"> تغيير كلمة
@@ -992,7 +1056,7 @@
                                             <span>ادخل الرقم الذي تود معرفة اذا كان مضافا الي القائمة السوداء ام
                                                 لا</span>
                                             <div class="enter-mobile">
-                                                <h6>أدخل رقم الجوال</h6>
+                                                <h4>أدخل رقم الجوال</h4>
                                                 <div class="input-group">
                                                     <label for="" class="form-label">رقم الموبيل</label>
                                                     <div class="col-9 px-0 ">
@@ -1158,15 +1222,19 @@
                                 </div>
                             </div>
 
-                            <!-- settings -->
+
 
                         </div>
+                        <!-- settings -->
                     </div>
                 </div>
                 <!-- tab content -->
+
             </div>
     </section>
     <!---------------------- finish personal account -------------------------------------------->
+
+  
     <!-- modal finish work -->
     <div class="modal fade modal-remove" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
@@ -1194,7 +1262,10 @@
     <div class="modal fade" id="exampleModal-1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
+                <div class="modal-header">
 
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
                 <div class="modal-body">
                     <h4>توثيق العضوية</h4>
                     <p>من فضلك قم بملئ البيانات التالية حتي نساعدك في توثيق
@@ -1242,7 +1313,10 @@
     <div class="modal fade" id="exampleModal-2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
+                <div class="modal-header">
 
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
                 <div class="modal-body">
                     <h4>كلمة المرور الجديدة</h4>
                     <p>أدخل كلمة مرور قوية تحتوي على الأقل على 8 حروف مكونة
@@ -1345,6 +1419,52 @@
         }
     </script>
     <!-- validiton button -->
+     <!-- upload img -->
+     <script>
+        const imgDiv = document.querySelector('.profile-pic-div');
+        const img = document.querySelector('#photo');
+        const file = document.querySelector('#file');
+        const uploadBtn = document.querySelector('#uploadBtn');
+
+        file.addEventListener('change', function () {
+            //this refers to file
+            const choosedFile = this.files[0];
+
+            if (choosedFile) {
+
+                const reader = new FileReader(); //FileReader is a predefined function of JS
+                reader.addEventListener('load', function () {
+                    img.setAttribute('src', reader.result);
+                });
+
+                reader.readAsDataURL(choosedFile);
+            }
+        });
+    </script>
+    <!-- upload img -->
+      <!-- upload profile  img -->
+      <script>
+        const imgDiv1 = document.querySelector('.profile-pic-div');
+        const img1 = document.querySelector('#photo1');
+        const file1 = document.querySelector('#file1');
+        const uploadBtn1 = document.querySelector('#uploadBtn1');
+
+        file1.addEventListener('change', function () {
+            //this refers to file
+            const choosedFile = this.files[0];
+
+            if (choosedFile) {
+
+                const reader = new FileReader(); //FileReader is a predefined function of JS
+                reader.addEventListener('load', function () {
+                    img1.setAttribute('src', reader.result);
+                });
+
+                reader.readAsDataURL(choosedFile);
+            }
+        });
+    </script>
+    <!-- upload profile img -->
 </body>
 
 </html>

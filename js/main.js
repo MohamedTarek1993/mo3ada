@@ -1,8 +1,8 @@
 //loader
-let loader = document.getElementById('preloader');
-window.addEventListener('load', function () {
-  loader.style.display = 'none';
-});
+// let loader = document.getElementById('preloader');
+// window.addEventListener('load', function () {
+//   loader.style.display = 'none';
+// });
 //loader
 //  scroll-up 
 var btn = $('#button');
@@ -24,16 +24,16 @@ btn.on('click', function (e) {
   $('html, body').animate({ scrollTop: 0 }, '300');
 });
 //    scroll-up 
-// animated hamburger icon
-$(document).ready($(function () {
-  let navBtn = $('.navbar-toggler');
-  $(navBtn).click(function () {
-    $(navBtn).toggleClass('active-hamburger');
-  });
-}));
-// animated hamburger icon
+  // animated hamburger icon
+  $(document).ready($(function () {
+    let navBtn = $('.navbar-toggler');
+    $(navBtn).click(function () {
+      $(navBtn).toggleClass('active-hamburger');
+    });
+  }));
+  // animated hamburger icon
 
-//    light&& dark 
+  //    light&& dark 
 
 // check for saved 'darkMode' in localStorage
 // let darkMode = localStorage.getItem('darkMode');

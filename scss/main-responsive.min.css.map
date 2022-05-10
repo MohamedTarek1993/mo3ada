@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "",
-    "sources": [
-        "main-responsive.scss"
-    ],
-    "names": [],
-    "file": "main-responsive.min.css"
-}
