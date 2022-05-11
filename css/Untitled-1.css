@@ -121,6 +121,8 @@ ul {
     background-color: #f5f5f5 !important;
     color: var(--iconcolor);
     font-family: "regular";
+    padding-top: .8rem;
+    padding-bottom: .8rem;
 }
 textarea.form-control {
     padding-left: 2%;
@@ -195,19 +197,26 @@ input::-webkit-inner-spin-button {
 }
 .icon {
     position: absolute;
-    top: 59%;
+    top: 54%;
     left: 1%;
     z-index: 900;
 }
 .icont {
     position: absolute;
-    top: 59%;
+    top: 54%;
     left: 51%;
     z-index: 900;
 }
 .icon i,
 .icont i {
     color: var(--iconcolor);
+}
+.bootstrap-select .dropdown-toggle:focus, .bootstrap-select>select.mobile-device:focus+.dropdown-toggle{
+    outline:unset !important;
+}
+.bootstrap-select .dropdown-menu{
+    transform: translate3d(0px, 51px, 0px);
+
 }
 .first {
     background-color: var(--backgroundfirstbtn);
@@ -720,7 +729,6 @@ p {
 }
 .datepicker-dropdown {
     padding: 2% 1% !important;
-    background-color: var(--color-fourth);
     color: var(--color-third);
     font-family: "regular";
 }
@@ -908,7 +916,7 @@ p {
     padding: 0 1%;
 }
 .awab .navbar .dropdown-lang {
-    border:1px solid var(--color-third);
+    border:1px solid var(--color-secound);
     background-color: transparent;
     color: var(--color-secound);
     width: 34px;
@@ -923,6 +931,7 @@ p {
 }
 .awab .navbar .dropdown-lang:hover{
     background-color: var(--color-fourth);
+    border-color: var(--color-fourth);
 }
 .awab .navbar .dropdown-lang .content {
     display: flex;
@@ -959,7 +968,7 @@ p {
     font-size: 12px;
 }
 .awab .navbar .dropdown-lang .selected-lang {
-    border-radius: 50;
+    border-radius: 50%;
     animation: showtoggle 0.5s linear;
     background-color: transparent;
     min-width: 35px;
@@ -996,7 +1005,7 @@ background-color: var(--color-fourth);
     margin-right: 0;
 }
 .awab .navbar .dropdown-sign {
-    border:1px solid var(--color-third);
+    border:1px solid var(--color-secound);
     background-color: transparent;
     color: var(--color-secound);
     width: 10%;
@@ -1004,7 +1013,8 @@ background-color: var(--color-fourth);
     padding: 8px 4px;
     transition: 0.9s all;
     position: relative;
-}
+}      
+
 .awab .navbar .dropdown-sign .content {
     display: flex;
     justify-content: center;
@@ -1041,7 +1051,8 @@ background-color: var(--color-fourth);
 }
 .awab .navbar .dropdown-sign .dropdown-menu[data-bs-popper] {
     top: 96%;
-    right: -15px;
+    right: -11px;
+    left: 0;
     background-color: var(--color-seven);
     border: 1x solid var(--color-seven);
 }
@@ -4815,7 +4826,7 @@ background-color: var(--color-fourth);
     .awab #uploadBtn {
         width: 44%;
         bottom: -5px;
-        transform: translateX(-27%);
+        transform: translateX(-79%);
     }
     .awab .data-coplete-tab .kind {
         margin-top: 4%;
@@ -5053,7 +5064,8 @@ background-color: var(--color-fourth);
     .awab #uploadBtn {
         width: 44%;
         bottom: -5px;
-        transform: translateX(-27%);
+        transform: translateX(-76%);
+
     }
     .awab #uploadBtn h6 {
         margin-top: 4%;
@@ -5368,7 +5380,7 @@ background-color: var(--color-fourth);
 }
 @media (min-width: 1023.98px) and (max-width: 1200px) {
     .awab .navbar-nav {
-        padding-left: 0;
+        padding-left: 0;    
         width: 66%;
     }
     .awab .navbar-nav .nav-link {

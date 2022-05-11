@@ -336,14 +336,21 @@
                             <form>
                                 <div class="add-rate">
                                     <h4>اضف تقييم</h4>
-                                <div class="rates">
-                                    <i class="bi bi-star-fill r"></i>
-                                    <i class="bi bi-star-fill r"></i>
-                                    <i class="bi bi-star-fill r"></i>
-                                    <i class="bi bi-star-fill r"></i>
-                                    <i class="bi bi-star-fill r"></i>
+                                    <div class="rates">
+                                        <fieldset class="rating">
+                                            <input type="radio" id="star5" name="rating" value="5" /><label for="star5"
+                                                class="full" ></label>
+                                            <input type="radio" id="star4" name="rating" value="4" /><label for="star4"
+                                                class="full"></label>
+                                            <input type="radio" id="star3" name="rating" value="3" /><label for="star3"
+                                                class="full"></label>
+                                            <input type="radio" id="star2" name="rating" value="2" /><label for="star2"
+                                                class="full"></label>
+                                            <input type="radio" id="star1" name="rating" value="1" /><label for="star1"
+                                                class="full"></label>
+                                        </fieldset>
+                                    </div>
                                 </div>
-                            </div>
                                 <div class="ewxprince">
                                     <label class="form-label"> كيف كانت تجربتك مع أحمد عادل</label>
                                     <textarea class="form-control"
@@ -362,7 +369,7 @@
                                                 <div class="text">
                                                     <i class="bi bi-hand-thumbs-up-fill"></i>
                                                     <p>انصح بالتعامل معه </p>
-                                                   
+
                                                 </div>
                                             </div>
                                         </label>
@@ -372,7 +379,7 @@
                                                 <div class="text">
                                                     <i class="bi bi-hand-thumbs-down-fill"></i>
                                                     <p>لم انصح بالتعامل معه </p>
-                                                 
+
                                                 </div>
                                             </div>
                                         </label>
@@ -388,8 +395,8 @@
                                             <div class="plan">
                                                 <span class="circle"></span>
                                                 <div class="text">
-                                                  <p>نعم قمت بالشراء</p>
-                                                 
+                                                    <p>نعم قمت بالشراء</p>
+
                                                 </div>
                                             </div>
                                         </label>
@@ -397,8 +404,8 @@
                                             <div class="plan">
                                                 <span class="circle"></span>
                                                 <div class="text">
-                                                   <p>لا لم أقم بالشراء</p>
-                                                 
+                                                    <p>لا لم أقم بالشراء</p>
+
                                                 </div>
                                             </div>
                                         </label>
@@ -432,6 +439,20 @@
         }
     </script>
     <!-- active heart-->
+    <!-- add rating -->
+    <script>
+        let star = document.querySelectorAll('input');
+        let showValue = document.querySelector('#rating-value');
+
+        for (let i = 0; i < star.length; i++) {
+            star[i].addEventListener('click', function () {
+                i = this.value;
+
+                // showValue.innerHTML = i + " out of 5";
+            });
+        }
+    </script>
+    <!-- add rating -->
 </body>
 
 </html>

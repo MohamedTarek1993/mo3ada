@@ -121,6 +121,11 @@ ul {
     background-color: #f5f5f5 !important;
     color: var(--iconcolor);
     font-family: "regular";
+    padding-top: .8rem;
+    padding-bottom: .8rem;
+}
+.bootstrap-select .dropdown-toggle .filter-option{
+    text-align: right;
 }
 textarea.form-control {
     padding-right: 2%;
@@ -195,19 +200,26 @@ input::-webkit-inner-spin-button {
 }
 .icon {
     position: absolute;
-    top: 59%;
+    top: 54%;
     right: 1%;
     z-index: 900;
 }
 .icont {
     position: absolute;
-    top: 59%;
+    top: 54%;
     right: 51%;
     z-index: 900;
 }
 .icon i,
 .icont i {
     color: var(--iconcolor);
+}
+.bootstrap-select .dropdown-toggle:focus, .bootstrap-select>select.mobile-device:focus+.dropdown-toggle{
+    outline:unset !important;
+}
+.bootstrap-select .dropdown-menu{
+    transform: translate3d(0px, 51px, 0px);
+
 }
 .first {
     background-color: var(--backgroundfirstbtn);
@@ -720,7 +732,7 @@ p {
 }
 .datepicker-dropdown {
     padding: 2% 1% !important;
-    background-color: var(--color-fourth);
+   
     color: var(--color-third);
     font-family: "regular";
 }
@@ -908,7 +920,7 @@ p {
     padding: 0 1%;
 }
 .awab .navbar .dropdown-lang {
-    border:1px solid var(--color-third);
+    border:1px solid var(--color-secound);
     background-color: transparent;
     color: var(--color-secound);
     width: 34px;
@@ -924,6 +936,7 @@ p {
 }
 .awab .navbar .dropdown-lang:hover{
     background-color: var(--color-fourth);
+    border-color: var(--color-fourth);
 }
 .awab .navbar .dropdown-lang .content {
     display: flex;
@@ -960,7 +973,7 @@ p {
     font-size: 12px;
 }
 .awab .navbar .dropdown-lang .selected-lang {
-    border-radius: 50;
+    border-radius: 50%;
     animation: showtoggle 0.5s linear;
     background-color: transparent;
     min-width: 35px;
@@ -997,7 +1010,7 @@ background-color: var(--color-fourth);
     margin-left: 0;
 }
 .awab .navbar .dropdown-sign {
-    border:1px solid var(--color-third);
+    border:1px solid var(--color-secound);
     background-color: transparent;
     color: var(--color-secound);
     width: 10%;
@@ -5165,7 +5178,7 @@ background-color: var(--color-fourth);
         left: 6px;
     }
     .awab .navbar .dropdown-lang .dropdown-menu[data-bs-popper] {
-        left: -9px;
+        left: 0px;
     }
     .awab .profile-pic-div {
         height: 118px;
