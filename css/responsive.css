@@ -262,7 +262,8 @@
   /* account */
 
   /* password page */
-  .reset_password .password_container,.login form {
+  .reset_password .password_container,
+  .login form {
     padding: 3rem 1rem;
     width: 100%;
   }
@@ -295,52 +296,144 @@
   /* contact page */
 
   /* index page */
-  .pagination{
+  .pagination {
     flex-wrap: wrap;
   }
-  .main-tabs .tab-product .pagination .btn{
+  .main-tabs .tab-product .pagination .btn {
     margin-right: 2%;
     width: 100%;
     padding: 8% 0%;
   }
-  .main-tabs .tab-content .filter-search .accordion .accordion-body .content .form-check{
+  .main-tabs
+    .tab-content
+    .filter-search
+    .accordion
+    .accordion-body
+    .content
+    .form-check {
     margin-bottom: 4%;
   }
-  .main-tabs .tab-content .filter-search .accordion{
+  .main-tabs .tab-content .filter-search .accordion {
     padding-bottom: 3%;
   }
-  .main-tabs .tab-content .search-box{
+  .main-tabs .tab-content .search-box {
     flex-direction: column;
     margin: 5% 0;
   }
-  .main-tabs .tab-content .search-box .form-control{
+  .main-tabs .tab-content .search-box .form-control {
     width: 90%;
   }
   .main-tabs .tab-content .search-box .first {
     width: 41%;
     padding: 2% 0;
     margin-top: 3%;
-}.main-tabs .tab-content .nav-old-new .nav-item .nav-link{
-  font-size: .8rem;
-}
-.main-tabs .tab-content .nav-old-new{
-  justify-content: center;
-}
-.main-tabs .tab-content .filter-tabel{
-  flex-direction: column;
-}
-.main-tabs .tab-content .filter-tabel .form-select,.main-tabs .tab-content .filter-tabel .btn-outline-primary{
-  width: 80%;
-  margin-bottom: 3%;
-}
-.main-tabs .tab-content .filter-brand-type{
-  justify-content: center;
-  
-}
-.main-tabs .tab-product .box-content{
-  flex-direction: column;
-}
+  }
+  .main-tabs .tab-content .nav-old-new .nav-item .nav-link {
+    font-size: 0.8rem;
+  }
+  .main-tabs .tab-content .nav-old-new {
+    justify-content: center;
+  }
+  .main-tabs .tab-content .filter-tabel {
+    flex-direction: column;
+  }
+  .main-tabs .tab-content .filter-tabel .form-select,
+  .main-tabs .tab-content .filter-tabel .btn-outline-primary {
+    width: 80%;
+    margin-bottom: 3%;
+  }
+  .main-tabs .tab-content .filter-brand-type {
+    justify-content: center;
+  }
+  .main-tabs .tab-product .box-content {
+    flex-direction: column;
+  }
   /* index page */
+
+  /* new advertisment page */
+  .new-adver .form-step-active .head h2,
+  .new-adver .form-step-active .commision .head h2,
+  .new-adver .form-step-active .adver-detials h2,
+  .new-adver .form-step-active .location-detials h2,
+  .new-adver .form-step-active .user-detials h2 {
+    font-size: 1.8rem;
+  }
+  .new-adver .form-step-active .nav .nav-item .nav-link {
+    font-size: 0.7rem;
+  }
+  .new-adver .form-step-active .tab-content .collection .content {
+    flex-direction: column;
+  }
+  .new-adver .form-step-active .tab-content .collection .content label.box {
+    width: 90%;
+  }
+  .new-adver .form-step-active .button {
+    justify-content: center;
+  }
+  .new-adver .form-step-active .button .btn {
+    padding: 2%;
+    width: 53%;
+  }
+  .new-adver .form-step-active .commision .quraan h5,
+  .new-adver .form-step-active .commision .swer .form-check .form-check-label {
+    font-size: 0.9rem;
+  }
+  .new-adver .form-step-active .commision .swer .form-check {
+    margin-bottom: 2%;
+  }
+  .new-adver .form-step-active .commision .swer .form-check .form-check-label {
+    display: inline-block;
+    width: 89%;
+  }
+  .new-adver .form-step-active .commision .notice {
+    margin-top: 5%;
+  }
+  .new-adver .form-step-active .commision .notice p {
+    font-size: 0.7rem;
+  }
+  .new-adver .form-step-active .adver-detials .upload-sec,
+  .new-adver .form-step-active .location-detials .upload-sec,
+  .new-adver .form-step-active .user-detials .upload-sec {
+    width: 70%;
+  }
+  /* new advertisment page */
+
+  /* header */
+  .main-tabs .notficatin-advers .content {
+    padding: 2% 0;
+  }
+  .main-tabs .login-logo .content .login a {
+    padding: 4% 5px;
+  }
+  .main-tabs .login-logo {
+    padding: 3% 0;
+  }
+  .main-tabs .notficatin-advers .content .adverts {
+    text-align: center;
+  }
+  .main-tabs .notficatin-advers .content .adverts button {
+    width: 70%;
+    padding: 5% 10px;
+  }
+  /* header */
+
+  /* footer */
+  footer .logo{
+    justify-content: center;
+    text-align: center;
+  }
+  footer .logo .social-icon{
+    justify-content: center;
+  }
+  footer .app-button{
+    justify-content: start;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  footer .app-button a img{
+    width: 75%;
+  }
+  /* footer */
 }
 /* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 1023.98px) {
@@ -401,7 +494,8 @@
   }
   /* account-rating */
   /* password page */
-  .reset_password .password_container,.login form {
+  .reset_password .password_container,
+  .login form {
     padding: 3rem 1rem;
     width: 100%;
   }
@@ -409,23 +503,55 @@
   .contact-us .content form .button .btn {
     width: 80%;
   }
-   /* index page */
-   .main-tabs .tab-content .filter-search .accordion{
+  /* index page */
+  .main-tabs .tab-content .filter-search .accordion {
     padding-bottom: 3%;
-   }
-   .pagination{
+  }
+  .pagination {
     flex-wrap: wrap;
   }
-  .main-tabs .tab-product .pagination .btn{
+  .main-tabs .tab-product .pagination .btn {
     margin-right: 2%;
     width: 100%;
     padding: 8% 0%;
   }
-  .main-tabs .tab-content .filter-tabel .form-select,.main-tabs .tab-content .filter-tabel .btn-outline-primary{
+  .main-tabs .tab-content .filter-tabel .form-select,
+  .main-tabs .tab-content .filter-tabel .btn-outline-primary {
     width: 80%;
     margin-bottom: 3%;
   }
-    /* index page */
+  .main-tabs .tab-content .filter-search .accordion .accordion-body .content .form-check{
+    margin-bottom: 3%;
+
+  }
+  .main-tabs .tab-content .filter-search .accordion .accordion-body .content .form-check .form-check-label{
+    margin-right: 5%;
+  }
+  footer .app-button{
+    justify-content: flex-start;
+    align-items: start;
+  }
+  /* index page */
+
+  /* header */
+  .main-tabs .nav-main .nav-item .nav-link{
+    padding: 1.5rem .5rem;
+  }
+  .main-tabs .nav-main .nav-item .nav-link .content-list img{
+    width: 20px;
+    height: 20px;
+  }
+  .main-tabs .nav-main .nav-item .nav-link .content-list h6{
+    font-size: .6rem;
+  }
+  .main-tabs .login-logo .content{
+    padding: 3% 0;
+  }
+  .main-tabs .notficatin-advers .content .adverts button {
+    width: 70%;
+    padding: 3% 10px;
+  }
+  /* header */
 }
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media (min-width: 1023.98px) and (max-width: 1200px) {
@@ -442,13 +568,20 @@
   .account-person .y .tab-pane .review .exist-review .all-rates .button .btn {
     width: 50%;
   }
-  .main-tabs .tab-content .filter-tabel .btn-outline-primary{
+  .main-tabs .tab-content .filter-tabel .btn-outline-primary {
     width: 14%;
   }
-  .main-tabs .tab-product .pagination .btn{
+  .main-tabs .tab-product .pagination .btn {
     margin-right: 94%;
     width: 114%;
   }
+  .main-tabs .nav-main .nav-item .nav-link{
+    padding: 1.1rem 0.7rem;
+
+  }
+  footer .app-button a img {
+    width: 60%;
+}
 }
 
 @media (max-width: 1000px) {

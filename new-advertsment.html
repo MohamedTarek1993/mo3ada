@@ -23,12 +23,7 @@
 </head>
 
 <body>
-    <!---------------------- start loader -------------------------------------------->
-    <!-- <div id="preloader"></div> -->
-    <!---------------------- finish loader -------------------------------------------->
-    <!---------------------- start scroll-up -------------------------------------------->
-    <!-- <a id="button" class="scroll-up"><i class="bi bi-chevron-up"></i></a> -->
-    <!---------------------- finish scroll-up -------------------------------------------->
+   
     <!---------------------- start main index -------------------------------------------->
     <main class="main-tabs">
         <div class="container">
@@ -137,7 +132,19 @@
             <div class="container">
                 <div class="content">
                     <div class="login">
-                        <a class="trans first" href="#">تسجيل الدخول</a>
+                        <!-- <a class="trans first" href="login.html">تسجيل الدخول</a> -->
+                        <!-- في حاله تسجيل الدخول -->
+                        <div class="dropdown">
+                            <a class="btn first dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                              اواب محمد
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                              <li><a class="dropdown-item" href="personal-account.html">حسابي</a></li>
+                              <li><a class="dropdown-item" href="personal-account.html">الرسائل</a></li>
+                              <li><a class="dropdown-item" href="#">تسجيل الخروج</a></li>
+                            </ul>
+                          </div>
+                        <!-- في حاله تسجيل الدخول -->
                     </div>
                     <div class="logo">
                         <a href="index.html">
@@ -154,26 +161,26 @@
             <div class="container">
                 <div class="content">
                     <ul class="notfication">
-                        <li> <a href="#">
+                        <li> <a href="personal-account.html">
                                 <img src="image/alarm.png" alt="alarm">
                             </a></li>
-                        <li> <a href="#">
+                        <li> <a href="personal-account.html">
                                 <img src="image/message.png" alt="alarm">
                             </a></li>
-                        <li> <a href="#">
+                        <li> <a href="personal-account.html">
                                 <img src="image/favourit.png" alt="alarm">
                             </a></li>
                     </ul>
                     <div class="adverts">
-                        <button type="button" class="trans second" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal"> <i class="bi bi-plus-lg"></i> اعرض اعلانك </button>
+                        <a href="product.html" type="button" class="trans second"> <i class="bi bi-plus-lg"></i> اعرض اعلانك </a>
                     </div>
                 </div>
 
             </div>
         </section>
         <!--second header -->
-    </main>
+
+  </main>
     <!---------------------- finish main index -------------------------------------------->
     <!---------------------- start new advertisment -------------------------------------------->
     <form class="new-adver">
@@ -215,36 +222,216 @@
                                 <input type="radio" name="rd" id="eight">
                                 <input type="radio" name="rd" id="nine">
                                 <label for="one" class="box first">
-                                    <div class="plan">
-                                        <span class="circle"></span>
+                                    <div class="plan">   
                                         <div class="text">
-                                            <i class="bi bi-hand-thumbs-up-fill"></i>
-                                            <p>انصح بالتعامل معه </p>
+                                        <img src="image/adv1.png" alt="adv">
+                                            <p>  سيارات ومركبات </p>
 
                                         </div>
+                                        <span class="circle"><i class="bi bi-check-square"></i></span>
                                     </div>
                                 </label>
-                                <label for="two" class="box second">
-                                    <div class="plan">
-                                        <span class="circle"></span>
+
+                                <label for="two" class="box two">
+                                    <div class="plan">   
                                         <div class="text">
-                                            <i class="bi bi-hand-thumbs-down-fill"></i>
-                                            <p>لم انصح بالتعامل معه </p>
+                                        <img src="image/adv2.png" alt="adv">
+                                            <p>   ملابس و أزياء </p>
 
                                         </div>
+                                        <span class="circle"><i class="bi bi-check-square"></i></span>
                                     </div>
                                 </label>
+
+                                <label for="three" class="box three">
+                                    <div class="plan">   
+                                        <div class="text">
+                                        <img src="image/adv3.png" alt="adv">
+                                            <p>   عقارات و أملاك  </p>
+                                        </div>
+                                        <span class="circle"><i class="bi bi-check-square"></i></span>
+                                    </div>
+                                </label>
+
+                                <label for="four" class="box four">
+                                    <div class="plan">   
+                                        <div class="text">
+                                        <img src="image/adv4.png" alt="adv">
+                                            <p>    أجهزة الكترونية وكهربية   </p>
+                                        </div>
+                                        <span class="circle"><i class="bi bi-check-square"></i></span>
+                                    </div>
+                                </label>
+
+                                <label for="five" class="box five">
+                                    <div class="plan">   
+                                        <div class="text">
+                                        <img src="image/adv5.png" alt="adv">
+                                            <p>      اثاث و أدوات وديكور   </p>
+                                        </div>
+                                        <span class="circle"><i class="bi bi-check-square"></i></span>
+                                    </div>
+                                </label>
+
+                                <label for="six" class="box six">
+                                    <div class="plan">   
+                                        <div class="text">
+                                        <img src="image/adv6.png" alt="adv">
+                                            <p>      حيوانات وطيور     </p>
+                                        </div>
+                                        <span class="circle"><i class="bi bi-check-square"></i></span>
+                                    </div>
+                                </label>
+
+                                <label for="seven" class="box seven">
+                                    <div class="plan">   
+                                        <div class="text">
+                                        <img src="image/adv7.png" alt="adv">
+                                            <p>       أسر منتجة     </p>
+                                        </div>
+                                        <span class="circle"><i class="bi bi-check-square"></i></span>
+                                    </div>
+                                </label>
+
+                                <label for="eight" class="box eight">
+                                    <div class="plan">   
+                                        <div class="text">
+                                        <img src="image/adv8.png" alt="adv">
+                                            <p>       أرقام هواتف ولوحات سيارات     </p>
+                                        </div>
+                                        <span class="circle"><i class="bi bi-check-square"></i></span>
+                                    </div>
+                                </label>
+
+                                <label for="nine" class="box nine">
+                                    <div class="plan">   
+                                        <div class="text">
+                                        <img src="image/adv9.png" alt="adv">
+                                            <p>      سلعة غير مصنفة    </p>
+                                        </div>
+                                        <span class="circle"><i class="bi bi-check-square"></i></span>
+                                    </div>
+                                </label>
+
                             </div>
                             <!-- content -->
                           </div>
                     </div>
                     <div class="tab-pane fade" id="pills-adv2" role="tabpanel" aria-labelledby="pills-adv2-tab">
-                        ...</div>
+                        <div class="collection">
+                            <!-- content -->
+                          <div class="content">
+                              <input type="radio" name="rd" id="one">
+                              <input type="radio" name="rd" id="two">
+                              <input type="radio" name="rd" id="three">
+                              <input type="radio" name="rd" id="four">
+                              <input type="radio" name="rd" id="five">
+                              <input type="radio" name="rd" id="six">
+                              <input type="radio" name="rd" id="seven">
+                              <input type="radio" name="rd" id="eight">
+                              <input type="radio" name="rd" id="nine">
+                              <label for="one" class="box first">
+                                  <div class="plan">   
+                                      <div class="text">
+                                      <img src="image/adv1.png" alt="adv">
+                                          <p>  سيارات ومركبات </p>
+
+                                      </div>
+                                      <span class="circle"><i class="bi bi-check-square"></i></span>
+                                  </div>
+                              </label>
+
+                              <label for="two" class="box two">
+                                  <div class="plan">   
+                                      <div class="text">
+                                      <img src="image/adv2.png" alt="adv">
+                                          <p>   ملابس و أزياء </p>
+
+                                      </div>
+                                      <span class="circle"><i class="bi bi-check-square"></i></span>
+                                  </div>
+                              </label>
+
+                              <label for="three" class="box three">
+                                  <div class="plan">   
+                                      <div class="text">
+                                      <img src="image/adv3.png" alt="adv">
+                                          <p>   عقارات و أملاك  </p>
+                                      </div>
+                                      <span class="circle"><i class="bi bi-check-square"></i></span>
+                                  </div>
+                              </label>
+
+                              <label for="four" class="box four">
+                                  <div class="plan">   
+                                      <div class="text">
+                                      <img src="image/adv4.png" alt="adv">
+                                          <p>    أجهزة الكترونية وكهربية   </p>
+                                      </div>
+                                      <span class="circle"><i class="bi bi-check-square"></i></span>
+                                  </div>
+                              </label>
+
+                              <label for="five" class="box five">
+                                  <div class="plan">   
+                                      <div class="text">
+                                      <img src="image/adv5.png" alt="adv">
+                                          <p>      اثاث و أدوات وديكور   </p>
+                                      </div>
+                                      <span class="circle"><i class="bi bi-check-square"></i></span>
+                                  </div>
+                              </label>
+
+                              <label for="six" class="box six">
+                                  <div class="plan">   
+                                      <div class="text">
+                                      <img src="image/adv6.png" alt="adv">
+                                          <p>      حيوانات وطيور     </p>
+                                      </div>
+                                      <span class="circle"><i class="bi bi-check-square"></i></span>
+                                  </div>
+                              </label>
+
+                              <label for="seven" class="box seven">
+                                  <div class="plan">   
+                                      <div class="text">
+                                      <img src="image/adv7.png" alt="adv">
+                                          <p>       أسر منتجة     </p>
+                                      </div>
+                                      <span class="circle"><i class="bi bi-check-square"></i></span>
+                                  </div>
+                              </label>
+
+                              <label for="eight" class="box eight">
+                                  <div class="plan">   
+                                      <div class="text">
+                                      <img src="image/adv8.png" alt="adv">
+                                          <p>       أرقام هواتف ولوحات سيارات     </p>
+                                      </div>
+                                      <span class="circle"><i class="bi bi-check-square"></i></span>
+                                  </div>
+                              </label>
+
+                              <label for="nine" class="box nine">
+                                  <div class="plan">   
+                                      <div class="text">
+                                      <img src="image/adv9.png" alt="adv">
+                                          <p>      سلعة غير مصنفة    </p>
+                                      </div>
+                                      <span class="circle"><i class="bi bi-check-square"></i></span>
+                                  </div>
+                              </label>
+
+                          </div>
+                          <!-- content -->
+                        </div>
+
+             </div>
                 </div>
                 <!-- finish tab content -->
 
-                <div class="py-5 text-center full">
-                    <a class="btn btn-next" href="#"> إنشاء حساب</a>
+                <div class=" text-center button">
+                    <a class="btn btn-next first" href="#"> إنشاء حساب</a>
                 </div>
             </div>
             <!-- first step -->
@@ -285,7 +472,7 @@
                         <p>. ملاحظة: عمولة الموقع هي على المعلن ولاتبرأ ذمة المعلن من العمولة إلا في حال دفعها</p>
                     </div>
                 </div>
-                <div class="py-5 button ">
+                <div class="py button ">
                     <a class="btn btn-next first" href="#"> المتابعة</a>
                     <a class="btn btn-prev second" href="#"> الرجوع</a>
                 </div>
@@ -485,7 +672,9 @@
             <div class="row pb-3">
                 <div class="col-lg-3 col-md-6 col-12">
                     <div class="logo">
-                        <img src="image/logo-footer.png" alt="logo">
+                        <a href="index.html">
+                            <img src="image/logo-footer.png" alt="logo">
+                        </a>
                         <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد الن العربى،
                         </p>
                         <ul class="social-icon">
@@ -614,28 +803,13 @@
         // }
     </script>
     <!-- form withard -->
-    <!-- upload img -->
-    <script>
+  
+    <!-- <script>
+
         const imgDiv = document.querySelector('.profile-pic-div');
         const img = document.querySelector('#photo');
         const file = document.querySelector('#file');
         const uploadBtn = document.querySelector('#uploadBtn');
-
-        //if user hover on img div 
-
-        // imgDiv.addEventListener('mouseenter', function () {
-        //     uploadBtn.style.display = "block";
-        // });
-
-        // //if we hover out from img div
-
-        // imgDiv.addEventListener('mouseleave', function () {
-        //     uploadBtn.style.display = "none";
-        // });
-
-        //lets work for image showing functionality when we choose an image to upload
-
-        //when we choose a foto to upload
 
         file.addEventListener('change', function () {
             //this refers to file
@@ -651,7 +825,7 @@
                 reader.readAsDataURL(choosedFile);
             }
         });
-    </script>
+    </script> --> 
     <!-- upload img -->
 </body>
 

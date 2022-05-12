@@ -19,12 +19,7 @@
 </head>
 
 <body>
-    <!---------------------- start loader -------------------------------------------->
-    <div id="preloader"></div>
-    <!---------------------- finish loader -------------------------------------------->
-    <!---------------------- start scroll-up -------------------------------------------->
-    <a id="button" class="scroll-up"><i class="bi bi-chevron-up"></i></a>
-    <!---------------------- finish scroll-up -------------------------------------------->
+  
     <!---------------------- start main index -------------------------------------------->
     <main class="main-tabs">
         <div class="container">
@@ -133,7 +128,19 @@
             <div class="container">
                 <div class="content">
                     <div class="login">
-                        <a class="trans first" href="#">تسجيل الدخول</a>
+                        <!-- <a class="trans first" href="login.html">تسجيل الدخول</a> -->
+                        <!-- في حاله تسجيل الدخول -->
+                        <div class="dropdown">
+                            <a class="btn first dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                              اواب محمد
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                              <li><a class="dropdown-item" href="personal-account.html">حسابي</a></li>
+                              <li><a class="dropdown-item" href="personal-account.html">الرسائل</a></li>
+                              <li><a class="dropdown-item" href="#">تسجيل الخروج</a></li>
+                            </ul>
+                          </div>
+                        <!-- في حاله تسجيل الدخول -->
                     </div>
                     <div class="logo">
                         <a href="index.html">
@@ -150,19 +157,18 @@
             <div class="container">
                 <div class="content">
                     <ul class="notfication">
-                        <li> <a href="#">
+                        <li> <a href="personal-account.html">
                                 <img src="image/alarm.png" alt="alarm">
                             </a></li>
-                        <li> <a href="#">
+                        <li> <a href="personal-account.html">
                                 <img src="image/message.png" alt="alarm">
                             </a></li>
-                        <li> <a href="#">
+                        <li> <a href="personal-account.html">
                                 <img src="image/favourit.png" alt="alarm">
                             </a></li>
                     </ul>
                     <div class="adverts">
-                        <button type="button" class="trans second" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal"> <i class="bi bi-plus-lg"></i> اعرض اعلانك </button>
+                        <a href="product.html" type="button" class="trans second"> <i class="bi bi-plus-lg"></i> اعرض اعلانك </a>
                     </div>
                 </div>
 
@@ -403,62 +409,7 @@
         </section>
         <!-- finish content -->
     </main>
-    <!---------------------- start  footer -------------------------------------------->
-    <footer>
-        <div class="container">
-            <div class="row pb-3">
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="logo">
-                        <img src="image/logo-footer.png" alt="logo">
-                        <p>هذا النص هو مثال لنص يمكن أن يستبدل في نفس المساحة، لقد تم توليد هذا النص من مولد الن العربى،
-                        </p>
-                        <ul class="social-icon">
-                            <li> <a target="__blank" href="#"> <i class="bi bi-facebook"></i></a></li>
-                            <li> <a target="__blank" href="#"> <i class="bi bi-instagram"></i></a></li>
-                            <li> <a target="__blank" href="#"> <i class="bi bi-snapchat"></i></a></li>
-                            <li> <a target="__blank" href="#"> <i class="bi bi-twitter"></i></a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-lg-2 col-md-6 col-12">
-                    <ul class="list">
-                        <li><a href="#">تسجيل الدخول</a></li>
-                        <li><a href="#"> الإعلانات المميزة</a></li>
-                        <li><a href="#"> الاشتراك بعضوية</a></li>
-                        <li><a href="#"> قائمة السلع والاعلانات الممنوعة</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-2 col-md-6 col-12">
-                    <ul class="list">
-                        <li><a href="#"> توثيق العضوية</a></li>
-                        <li><a href="#"> نظام الخصم</a></li>
-                        <li><a href="#"> القائمة السواء</a></li>
-                        <li><a href="#"> قواعد السلامة</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-2 col-md-6 col-12">
-                    <ul class="list">
-                        <li><a href="#"> تواصل معنا</a></li>
-                        <li><a href="#"> سياسة الخصوصية</a></li>
-                        <li><a href="#"> الشروط والأحكام</a></li>
-                        <li><a href="#"> الأسألة الشائعة</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="app-button">
-                        <a target="__blank" href=""> <img src="image/app.png" alt="app"></a>
-                        <a target="__blank" href=""> <img src="image/google.png" alt="google"></a>
-
-                    </div>
-                </div>
-
-            </div>
-        </div>
-        <div class="lower-footer">
-            <p>كل الحقوق محفوظة @ معاوضة2022</p>
-        </div>
-    </footer>
-    <!---------------------- finish  footer -------------------------------------------->
+  
     <!-- modal share adv -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog">

@@ -22,12 +22,7 @@
 </head>
 
 <body>
-    <!---------------------- start loader -------------------------------------------->
-    <!-- <div id="preloader"></div> -->
-    <!---------------------- finish loader -------------------------------------------->
-    <!---------------------- start scroll-up -------------------------------------------->
-    <!-- <a id="button" class="scroll-up"><i class="bi bi-chevron-up"></i></a> -->
-    <!---------------------- finish scroll-up -------------------------------------------->
+   
     <!---------------------- start main index -------------------------------------------->
     <main class="main-tabs">
         <div class="container">
@@ -136,7 +131,19 @@
             <div class="container">
                 <div class="content">
                     <div class="login">
-                        <a class="trans first" href="#">تسجيل الدخول</a>
+                        <!-- <a class="trans first" href="login.html">تسجيل الدخول</a> -->
+                        <!-- في حاله تسجيل الدخول -->
+                        <div class="dropdown">
+                            <a class="btn first dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                              اواب محمد
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                              <li><a class="dropdown-item" href="personal-account.html">حسابي</a></li>
+                              <li><a class="dropdown-item" href="personal-account.html">الرسائل</a></li>
+                              <li><a class="dropdown-item" href="#">تسجيل الخروج</a></li>
+                            </ul>
+                          </div>
+                        <!-- في حاله تسجيل الدخول -->
                     </div>
                     <div class="logo">
                         <a href="index.html">
@@ -153,26 +160,26 @@
             <div class="container">
                 <div class="content">
                     <ul class="notfication">
-                        <li> <a href="#">
+                        <li> <a href="personal-account.html">
                                 <img src="image/alarm.png" alt="alarm">
                             </a></li>
-                        <li> <a href="#">
+                        <li> <a href="personal-account.html">
                                 <img src="image/message.png" alt="alarm">
                             </a></li>
-                        <li> <a href="#">
+                        <li> <a href="personal-account.html">
                                 <img src="image/favourit.png" alt="alarm">
                             </a></li>
                     </ul>
                     <div class="adverts">
-                        <button type="button" class="trans second" data-bs-toggle="modal"
-                            data-bs-target="#exampleModal"> <i class="bi bi-plus-lg"></i> اعرض اعلانك </button>
+                        <a href="product.html" type="button" class="trans second"> <i class="bi bi-plus-lg"></i> اعرض اعلانك </a>
                     </div>
                 </div>
 
             </div>
         </section>
         <!--second header -->
-    </main>
+
+  </main>
     <!---------------------- finish main index -------------------------------------------->
     <!---------------------- start content -------------------------------------------->
     <section class="list-collection">
