@@ -55,14 +55,14 @@ ul {
 p {
   margin-bottom: 0;
 }
-.accordion-button:not(.collapsed){
+.accordion-button:not(.collapsed) {
   color: var(--color-third);
 }
-.accordion-body{
+.accordion-body {
   color: var(--color-secound);
-  font-family: 'regular';
+  font-family: "regular";
 }
-.pagination{
+.pagination {
   flex-wrap: wrap;
 }
 .form-label {
@@ -341,18 +341,17 @@ input::-webkit-inner-spin-button {
       }
       .login {
         width: 50%;
-        .dropdown-toggle{
-          &::after{
+        .dropdown-toggle {
+          &::after {
             vertical-align: 0.155em;
             margin-right: 0.55em;
-
           }
         }
-        .dropdown-menu{
+        .dropdown-menu {
           text-align: right;
-          .dropdown-item{
-            font-size: .9rem;
-            font-family: 'regular';
+          .dropdown-item {
+            font-size: 0.9rem;
+            font-family: "regular";
           }
         }
       }
@@ -388,6 +387,8 @@ input::-webkit-inner-spin-button {
         width: 50%;
         display: flex;
         align-items: end;
+        justify-content: end;
+        text-align: center;
       }
     }
   }
@@ -788,7 +789,6 @@ input::-webkit-inner-spin-button {
               font-family: "light";
               font-size: 0.8rem;
               color: #5c5a61;
-             
             }
           }
         }
@@ -1046,11 +1046,11 @@ input::-webkit-inner-spin-button {
       }
     }
     .tab-content {
-     .collection{
+      .collection {
         .content {
           display: flex;
           flex-direction: row;
-          flex-wrap:wrap ;
+          flex-wrap: wrap;
           label.box {
             width: 45%;
             margin: 1%;
@@ -1077,9 +1077,10 @@ input::-webkit-inner-spin-button {
                 align-items: center;
                 width: 80%;
                 img {
-                width: 30px;
-                height: 30px;
-                filter: invert(61%) sepia(5%) saturate(231%) hue-rotate(202deg) brightness(92%) contrast(83%);
+                  width: 30px;
+                  height: 30px;
+                  filter: invert(61%) sepia(5%) saturate(231%)
+                    hue-rotate(202deg) brightness(92%) contrast(83%);
                 }
                 p {
                   margin-top: 1%;
@@ -1089,21 +1090,21 @@ input::-webkit-inner-spin-button {
                   font-family: "bold";
                 }
               }
-                .circle {
-              height: 22px;
-              width: 22px;
-              background: white;
-              // border: 5px solid var(--color-primary);
-              // display: none;
-              margin-right: 3px;
-              margin-left: 9px;
-              // border-radius: 50%;
-              transition: all 0.25s ease;
-              i{
-               color: #8e8e93;
-               font-size: 1.2rem;
+              .circle {
+                height: 22px;
+                width: 22px;
+                background: white;
+                // border: 5px solid var(--color-primary);
+                // display: none;
+                margin-right: 3px;
+                margin-left: 9px;
+                // border-radius: 50%;
+                transition: all 0.25s ease;
+                i {
+                  color: #8e8e93;
+                  font-size: 1.2rem;
+                }
               }
-            }
             }
           }
           #one:checked ~ label.first,
@@ -1114,24 +1115,24 @@ input::-webkit-inner-spin-button {
           #six:checked ~ label.six,
           #seven:checked ~ label.seven,
           #eight:checked ~ label.eight,
-          #nine:checked ~ label.nine{
+          #nine:checked ~ label.nine {
             border-color: var(--color-primary);
             // background: var(--color-primary);
             color: white;
-            .text{
-              img{
-                filter: invert(61%) sepia(4%) saturate(2595%) hue-rotate(144deg) brightness(93%) contrast(92%);
+            .text {
+              img {
+                filter: invert(61%) sepia(4%) saturate(2595%) hue-rotate(144deg)
+                  brightness(93%) contrast(92%);
               }
               p {
                 color: var(--color-six);
               }
             }
-         
-         
+
             .circle {
               // border-color: white;
               // background: var(--color-secound);
-              i{
+              i {
                 color: var(--color-six);
               }
             }
@@ -1140,11 +1141,9 @@ input::-webkit-inner-spin-button {
             display: none;
           }
         }
-
-     }
+      }
     }
 
-    
     // start commission
     .commision {
       .head {
@@ -1674,7 +1673,7 @@ input::-webkit-inner-spin-button {
         width: 100%;
         text-align: center;
         margin: 7% auto 2%;
-        .btn{
+        .btn {
           width: 100%;
         }
       }
@@ -1687,12 +1686,13 @@ input::-webkit-inner-spin-button {
 //person  account
 .account-person {
   background-color: var(--background);
+  position: relative;
   padding: 5% 0;
   .x {
     border: 1px solid #8d8d8d;
     /* upload */
     .profile-pic-div {
-      height: 100%;
+      height: 350px;
       width: 100%;
       // position: absolute;
       // top: 7%;
@@ -1713,7 +1713,7 @@ input::-webkit-inner-spin-button {
     #uploadBtn {
       position: absolute;
       bottom: 40px;
-      left: 9%;
+      left: 4%;
       text-align: center;
       /* line-height: 30px; */
       cursor: pointer;
@@ -1734,57 +1734,67 @@ input::-webkit-inner-spin-button {
         }
       }
       &:hover {
-        opacity: 0.5;
+        opacity: 0.9;
       }
     }
     /* upload */
 
     // upload profile
-.upload-img{
-  width: 50%;
-  position: relative;
-  .profile-pic-div {
-    height: 49%;
-    width: 15%;
-  
-  }
+    .upload-img {
+      // width: 50%;
+      position: absolute;
+      bottom: 19%;
+    right: 11%;
+      .profile-pic-divs {
+        height: 150px;
+        width: 150px;
+      }
 
-  #photo1 {
-    height: 100%;
-    width: 100%;
-    border-radius: 50%;
-  }
-  #file1 {
-    display: none;
-  }
-  #uploadBtn1 {
-    position: absolute;
-    bottom: 40px;
-    left: 9%;
-    text-align: center;
-    /* line-height: 30px; */
-    cursor: pointer;
-    transition: 0.25s all ease;
-    /* display: none; */
-    span {
-      width: 47px;
-      height: 47px;
-      position: relative;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 50%;
-      background-color: var(--background);
-      i {
-        font-size: 25px;
-        color: var(--color-six);
+      #photo1 {
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+      }
+      #file1 {
+        display: none;
+      }
+      #uploadBtn1 {
+        position: absolute;
+        bottom: -6px;
+        left: -2%;
+        border: 4px solid var(--background);
+        border-radius: 50%;
+        text-align: center;
+        /* line-height: 30px; */
+        cursor: pointer;
+        transition: 0.25s all ease;
+        /* display: none; */
+        span {
+          width: 47px;
+          height: 47px;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          background-color: var(--color-six);
+          transition: .25s all ease;
+          i {
+            font-size: 17px;
+            color: var(--background);
+          }
+        }
+        &:hover {
+          span{
+            background-color: var(--background);
+            i{
+              color: var(--color-six);
+            }
+          }
+       
+        }
       }
     }
-    &:hover {
-      opacity: 0.5;
-    }
-  }
-}
     // upload profile
 
     .head {
@@ -1793,8 +1803,7 @@ input::-webkit-inner-spin-button {
       background-size: cover;
       height: 300px;
       position: relative;
-     
-      
+
       span {
         position: absolute;
         left: 3%;
@@ -2204,7 +2213,7 @@ input::-webkit-inner-spin-button {
               border: 1px solid var(--color-secound);
               cursor: pointer;
               transition: all 0.25s ease;
-             
+
               .circle {
                 height: 22px;
                 width: 22px;
@@ -2276,7 +2285,7 @@ input::-webkit-inner-spin-button {
               border: 1px solid var(--color-secound);
               cursor: pointer;
               transition: all 0.25s ease;
-             
+
               .circle {
                 height: 22px;
                 width: 22px;
@@ -2338,7 +2347,7 @@ input::-webkit-inner-spin-button {
 //personal account
 .account-personal {
   background-color: var(--background);
- 
+
   .tab-contents {
     padding: 5% 0;
     .nav-pills {
@@ -2681,7 +2690,6 @@ input::-webkit-inner-spin-button {
                 position: absolute;
                 bottom: -21%;
                 font-size: 0.6rem;
-               
               }
             }
             .reseved-mesage {
@@ -2704,7 +2712,6 @@ input::-webkit-inner-spin-button {
                 bottom: -21%;
                 font-size: 0.6rem;
                 right: 0;
-               
               }
             }
           }
@@ -2922,7 +2929,7 @@ input::-webkit-inner-spin-button {
 
 //  start footer
 footer {
-  background-color: #F3F4F6;
+  background-color: #f3f4f6;
   padding: 7% 0 2%;
   .logo {
     display: flex;
@@ -3187,42 +3194,40 @@ footer {
 //  modal
 // rating
 
-
 /*styling star rating*/
-.rating{
-	border: none;
-	float: left;
+.rating {
+  border: none;
+  float: left;
 }
 
-.rating > input{
-	display: none;
+.rating > input {
+  display: none;
 }
 
-.rating > label:before{
+.rating > label:before {
   content: "\f586";
-	font-family: bootstrap-icons;
-	margin: 5px;
-	font-size: 2rem;
-	display: inline-block;
-	cursor: pointer;
+  font-family: bootstrap-icons;
+  margin: 5px;
+  font-size: 2rem;
+  display: inline-block;
+  cursor: pointer;
 }
 
-.rating > label{
-	color: #7a797a;
-	float: right;
-	cursor: pointer;
+.rating > label {
+  color: #7a797a;
+  float: right;
+  cursor: pointer;
 }
 
 .rating > input:checked ~ label,
-.rating:not(:checked) > label:hover, 
-.rating:not(:checked) > label:hover ~ label
-{
-	color: #f69504;
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: #f69504;
 }
 
 .rating > input:checked + label:hover,
 .rating > input:checked ~ label:hover,
 .rating > label:hover ~ input:checked ~ label,
-.rating > input:checked ~ label:hover ~ label{
-	color: #f69504;
+.rating > input:checked ~ label:hover ~ label {
+  color: #f69504;
 }
