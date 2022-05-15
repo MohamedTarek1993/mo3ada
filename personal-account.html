@@ -1459,25 +1459,20 @@
     <!-- show-hide password -->
     <script>
         function myFunction1(id) {
-            var x = document.getElementById('myInput2'); 
-            console.log('x')
-            if (x.type === "password") {
+            var x = document.getElementById('myInput2');
+            var y = document.getElementById("myInput2"); 
+            var z = document.getElementById("myInput3");
+            
+            if (x.type === "password" || y.type === "password" || z.type === "password" ) {
                 x.type = "text";
+                y.type = "text";
+                z.type = "text";
             } else {
                 x.type = "password";
+                y.type = "password";
+                z.type = "password";
             }
-            // var y = document.getElementById("myInput2");
-            // if (y.type === "password") {
-            //     y.type = "text";
-            // } else {
-            //     y.type = "password";
-            // }
-            // var z = document.getElementById("myInput3");
-            // if (z.type === "password") {
-            //     z.type = "text";
-            // } else {
-            //     z.type = "password";
-            // }
+            
             $(`#id${id}`).toggleClass("bi-eye bi-eye-slash");
         }
     </script>
