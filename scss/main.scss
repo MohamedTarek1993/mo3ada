@@ -80,6 +80,7 @@ p {
   font-family: "regular";
   width: 92%;
 }
+
 .form-select {
   // border-radius: 8px;
   padding: 0.54rem 1.4rem;
@@ -156,7 +157,7 @@ input::-webkit-inner-spin-button {
   font-family: "regular";
   color: var(--background);
   border: 1px solid var(--background);
-  border-radius: 8px;
+  border-radius: 0px;
   padding: 2% 10px;
   width: 30%;
   &:hover {
@@ -173,7 +174,7 @@ input::-webkit-inner-spin-button {
   font-family: "regular";
   background-color: var(--background);
   border: 1px solid var(--color-six);
-  border-radius: 8px;
+  border-radius: 0px;
   padding: 2% 10px;
   width: 30%;
   &:hover {
@@ -393,7 +394,7 @@ input::-webkit-inner-spin-button {
     }
   }
   .tab-content {
-    padding: 4% 0;
+    padding: 2% 0;
     .filter-search {
       background-color: var(--background);
       padding: 4% 1%;
@@ -518,7 +519,7 @@ input::-webkit-inner-spin-button {
       flex-direction: row;
       justify-content: flex-start;
       align-items: center;
-      padding: 5% 0;
+      padding: 5% 0 2%;
       .form-select {
         width: 20%;
         margin-left: 1%;
@@ -574,6 +575,7 @@ input::-webkit-inner-spin-button {
           i {
             color: var(--color-primary);
             background-color: white;
+            opacity: 0;
           }
         }
       }
@@ -604,7 +606,7 @@ input::-webkit-inner-spin-button {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      margin-bottom: 5%;
+      margin-bottom: 3%;
       padding: 2% 1%;
       .first-col {
         .info {
@@ -746,7 +748,7 @@ input::-webkit-inner-spin-button {
         }
         .main-image {
           width: 100%;
-          height: 500px;
+          height: 350px;
         }
         .detials-button {
           display: flex;
@@ -804,7 +806,7 @@ input::-webkit-inner-spin-button {
             padding-bottom: 4%;
           }
           img {
-            width: 736px;
+            width: 100%;
             height: 263px;
             margin-bottom: 3%;
           }
@@ -916,6 +918,7 @@ input::-webkit-inner-spin-button {
           textarea {
             background-color: #f7f7f7;
             height: 150px;
+            width: 100%;
           }
           div {
             text-align: end;
@@ -1230,10 +1233,10 @@ input::-webkit-inner-spin-button {
     .adver-detials,
     .location-detials,
     .user-detials {
-      margin-bottom: 2%;
+      margin-bottom: 1%;
       position: relative;
       border-bottom: 1px solid var(--color-fourth);
-      padding-bottom: 5%;
+      padding-bottom: 3%;
       h2 {
         font-size: 1.9rem;
         color: var(--color-primary);
@@ -1453,7 +1456,7 @@ input::-webkit-inner-spin-button {
   .password_container {
     background-color: white;
     border-radius: 12px;
-    margin-top: 5%;
+    margin: 5%;
     margin-left: auto;
     margin-right: auto;
     padding: 3rem 6rem;
@@ -1687,7 +1690,7 @@ input::-webkit-inner-spin-button {
 .account-person {
   background-color: var(--background);
   position: relative;
-  padding: 5% 0;
+  padding: 3% 0;
   .x {
     border: 1px solid #8d8d8d;
     /* upload */
@@ -1706,6 +1709,8 @@ input::-webkit-inner-spin-button {
     #photo {
       height: 100%;
       width: 100%;
+      background-position: center;
+      background-size: cover;
     }
     #file {
       display: none;
@@ -1770,8 +1775,8 @@ input::-webkit-inner-spin-button {
         transition: 0.25s all ease;
         /* display: none; */
         span {
-          width: 47px;
-          height: 47px;
+          width: 35px;
+          height: 35px;
           position: relative;
           display: flex;
           justify-content: center;
@@ -1780,7 +1785,7 @@ input::-webkit-inner-spin-button {
           background-color: var(--color-six);
           transition: .25s all ease;
           i {
-            font-size: 17px;
+            font-size: 15px;
             color: var(--background);
           }
         }
@@ -1844,18 +1849,25 @@ input::-webkit-inner-spin-button {
         width: 55%;
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: flex-start;
         flex-direction: column;
         text-align: center;
+        padding-right: 17%;
+        h6{
+          font-family: 'bold';
+          font-size: 1.2rem;
+          margin-bottom: 0;
+        }
         .rates {
           width: 100%;
           display: flex;
-          justify-content: center;
-          align-items: center;
+          justify-content: flex-start;
+          align-items: flex-start;
           flex-direction: row;
-          padding: 2% 0;
+          padding: 1% 0;
           .bi-star-fill {
             color: #f69504;
+            font-size: 1.1rem;
           }
           .bi-star-fill.r {
             color: #7a797a;
@@ -1872,8 +1884,9 @@ input::-webkit-inner-spin-button {
         }
         .notes {
           width: 100%;
+          text-align: start;
           p {
-            font-size: 1rem;
+            font-size: .9rem;
             color: var(--color-primary);
             font-family: "light";
             i {
@@ -1881,7 +1894,7 @@ input::-webkit-inner-spin-button {
               margin-left: 1%;
             }
             span {
-              font-size: 1.1rem;
+              font-size: 1rem;
               font-family: "regular";
             }
           }
@@ -1918,7 +1931,7 @@ input::-webkit-inner-spin-button {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        margin-bottom: 5%;
+        margin-bottom: 3%;
         padding: 2% 1%;
         .first-col {
           .info {
@@ -1981,7 +1994,7 @@ input::-webkit-inner-spin-button {
         }
       }
       .review {
-        padding-top: 3%;
+        padding-top: 1%;
         .empty-review {
           display: flex;
           justify-content: center;
@@ -2177,7 +2190,7 @@ input::-webkit-inner-spin-button {
             justify-content: center;
             align-items: center;
             flex-direction: row;
-            padding: 2% 0 7%;
+            padding: 2% 0 5%;
             .bi-star-fill {
               color: #f69504;
               font-size: 2rem;
@@ -2349,9 +2362,9 @@ input::-webkit-inner-spin-button {
   background-color: var(--background);
 
   .tab-contents {
-    padding: 5% 0;
+    padding: 2% 0;
     .nav-pills {
-      width: 100%;
+      width: 101%;
       background-color: #fafafa;
       .nav-item {
         width: 20%;
@@ -2372,7 +2385,7 @@ input::-webkit-inner-spin-button {
       }
     }
     .tab-content {
-      padding: 5% 0;
+      padding: 3% 0;
       .nav-pills {
         background: var(--background);
         border-bottom: 1px solid #707070;
@@ -2750,7 +2763,7 @@ input::-webkit-inner-spin-button {
           display: flex;
           justify-content: space-between;
           align-items: flex-start;
-          margin-bottom: 5%;
+          margin-bottom: 3%;
           padding: 2% 1%;
           .first-col {
             .info {
@@ -2930,7 +2943,7 @@ input::-webkit-inner-spin-button {
 //  start footer
 footer {
   background-color: #f3f4f6;
-  padding: 7% 0 2%;
+  padding: 4% 0 2%;
   .logo {
     display: flex;
     justify-content: flex-start;
@@ -2979,13 +2992,13 @@ footer {
   }
   .app-button {
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
+    justify-content:center;
+    align-items: center;
     flex-direction: column;
     a {
       margin-bottom: 5%;
       img {
-        width: 50%;
+        width: 76%;
       }
     }
   }
@@ -2994,7 +3007,7 @@ footer {
     align-items: center;
     justify-content: center;
     border-top: 1px solid var(--color-fourth);
-    padding-top: 3%;
+    padding-top: 2%;
     p {
       font-size: 1rem;
       font-family: "regular";
@@ -3099,6 +3112,7 @@ footer {
       textarea {
         height: 200px;
         background-color: #f5f5f5;
+        width: 100%;
       }
       .message {
         margin: 2% 1%;
