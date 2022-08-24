@@ -4,7 +4,7 @@
   --color-primary: #0f262b;
   --color-secound: #6c6c70;
   --color-third: #9fb9bf;
-  --color-fourth: #dbe5ef;
+  --color-fourth: #0c0c0c;
   --color-fifth: #b8c7d5;
   --background: #ffffff;
   --color-six: #193e46;
@@ -336,8 +336,8 @@ input::-webkit-inner-spin-button {
       padding: 1% 0;
       .logo {
         img {
-          width: 128px;
-          height: 47px;
+          width: 200px;
+          height: 60px;
         }
       }
       .login {
@@ -606,8 +606,8 @@ input::-webkit-inner-spin-button {
       display: flex;
       justify-content: space-between;
       align-items: flex-start;
-      margin-bottom: 3%;
-      padding: 2% 1%;
+      margin-bottom: 7px;
+      padding: 1%;
       .first-col {
         .info {
           display: flex;
@@ -660,6 +660,22 @@ input::-webkit-inner-spin-button {
             img.active-heart {
               opacity: 0.5;
             }
+          }
+        }
+      }
+    }
+    .box-content-adv {
+      margin-bottom: 7px;
+      padding: 1%;
+      .third-col {
+        position: relative;
+        width: 100%;
+        .image {
+          width: 100%;
+          position: relative;
+          img {
+            width: 100%;
+            height: 177px;
           }
         }
       }
@@ -724,28 +740,43 @@ input::-webkit-inner-spin-button {
             margin-left: 5%;
           }
         }
-        .rates {
+        .cr{
           display: flex;
-          justify-content: start;
-          align-items: center;
           flex-direction: row;
-          padding: 2% 0;
-          .bi-star-fill {
-            color: #f69504;
+          justify-content: space-between;
+          align-items: center;
+          margin: 1% 0;
+          .rates {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            flex-direction: row;
+            padding: 2% 0;
+            width: 50%;
+            .bi-star-fill {
+              color: #f69504;
+            }
+            .bi-star-fill.r {
+              color: #7a797a;
+            }
+            i {
+              margin-left: 1%;
+            }
+  
+            span {
+              font-size: 0.7rem;
+              color: var(--color-primary);
+              font-family: "regular";
+            }
           }
-          .bi-star-fill.r {
-            color: #7a797a;
-          }
-          i {
-            margin-left: 1%;
-          }
-
-          span {
-            font-size: 0.7rem;
-            color: var(--color-primary);
-            font-family: "regular";
+          .follow_button{
+            width: 50%;
+            display: flex;
+    justify-content: flex-end;
+    align-items: center;
           }
         }
+      
         .main-image {
           width: 100%;
           height: 350px;
@@ -1749,7 +1780,7 @@ input::-webkit-inner-spin-button {
       // width: 50%;
       position: absolute;
       bottom: 19%;
-    right: 11%;
+      right: 11%;
       .profile-pic-divs {
         height: 150px;
         width: 150px;
@@ -1783,20 +1814,19 @@ input::-webkit-inner-spin-button {
           align-items: center;
           border-radius: 50%;
           background-color: var(--color-six);
-          transition: .25s all ease;
+          transition: 0.25s all ease;
           i {
             font-size: 15px;
             color: var(--background);
           }
         }
         &:hover {
-          span{
+          span {
             background-color: var(--background);
-            i{
+            i {
               color: var(--color-six);
             }
           }
-       
         }
       }
     }
@@ -1853,8 +1883,8 @@ input::-webkit-inner-spin-button {
         flex-direction: column;
         text-align: center;
         padding-right: 17%;
-        h6{
-          font-family: 'bold';
+        h6 {
+          font-family: "bold";
           font-size: 1.2rem;
           margin-bottom: 0;
         }
@@ -1886,7 +1916,7 @@ input::-webkit-inner-spin-button {
           width: 100%;
           text-align: start;
           p {
-            font-size: .9rem;
+            font-size: 0.9rem;
             color: var(--color-primary);
             font-family: "light";
             i {
@@ -1931,8 +1961,8 @@ input::-webkit-inner-spin-button {
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
-        margin-bottom: 3%;
-        padding: 2% 1%;
+        margin-bottom: 7px;
+        padding: 1%;
         .first-col {
           .info {
             display: flex;
@@ -1989,6 +2019,22 @@ input::-webkit-inner-spin-button {
               img.active-heart {
                 opacity: 0.5;
               }
+            }
+          }
+        }
+      }
+      .box-content-adv {
+        margin-bottom: 7px;
+        padding: 1%;
+        .third-col {
+          position: relative;
+          width: 100%;
+          .image {
+            width: 100%;
+            position: relative;
+            img {
+              width: 100%;
+              height: 177px;
             }
           }
         }
@@ -2763,8 +2809,8 @@ input::-webkit-inner-spin-button {
           display: flex;
           justify-content: space-between;
           align-items: flex-start;
-          margin-bottom: 3%;
-          padding: 2% 1%;
+          margin-bottom: 7px;
+          padding: 1%;
           .first-col {
             .info {
               display: flex;
@@ -2817,6 +2863,22 @@ input::-webkit-inner-spin-button {
                 img.active-heart {
                   opacity: 0.5;
                 }
+              }
+            }
+          }
+        }
+        .box-content-adv {
+          margin-bottom: 7px;
+          padding: 1%;
+          .third-col {
+            position: relative;
+            width: 100%;
+            .image {
+              width: 100%;
+              position: relative;
+              img {
+                width: 100%;
+                height: 177px;
               }
             }
           }
@@ -2949,8 +3011,8 @@ footer {
     justify-content: flex-start;
     flex-direction: column;
     img {
-      width: 212px;
-      height: 75px;
+      width: 250px;
+      height: 90px;
       margin-bottom: 5%;
     }
     p {
@@ -2992,7 +3054,7 @@ footer {
   }
   .app-button {
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     a {
